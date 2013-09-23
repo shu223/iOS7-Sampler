@@ -32,7 +32,7 @@
     [super viewDidLoad];
     
     self.items = @[
-                   // Dyanamic Behaviors
+                   // Dynamic Behaviors
                    @{kItemKeyTitle: @"Dynamic Behaviors",
                      kItemKeyDescription: @"UIDynamicAnimator, UICollisionBehavior, etc...",
                      kItemKeyClassPrefix: @"DynamicBehaviors",
