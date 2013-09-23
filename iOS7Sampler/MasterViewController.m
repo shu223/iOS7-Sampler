@@ -7,13 +7,18 @@
 //
 
 #import "MasterViewController.h"
-
 #import "DetailViewController.h"
 
-@interface MasterViewController () {
-    NSMutableArray *_objects;
-}
+
+#define kItemKeyTitle       @"title"
+#define kItemKeyDescription @"description"
+#define kItemKeyClassPrefix @"prefix"
+
+
+@interface MasterViewController ()
+@property (nonatomic, strong) NSArray *items;
 @end
+
 
 @implementation MasterViewController
 
@@ -25,89 +30,129 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-    self.navigationItem.leftBarButtonItem = self.editButtonItem;
+    
+    self.items = @[
+                   // Dyanamic Behaviors
+                   @{kItemKeyTitle: @"Dynamic Behaviors",
+                     kItemKeyDescription: @"UIDynamicAnimator, UICollisionBehavior, etc...",
+                     kItemKeyClassPrefix: @"DynamicBehaviors",
+                     },
+                   
+                   // Speech Synthesis
+                   @{kItemKeyTitle: @"Speech Synthesis",
+                     kItemKeyDescription: @"Synthesized speech from text using AVSpeechSynthesizer and AVSpeechUtterance.",
+                     kItemKeyClassPrefix: @"SpeechSynthesis",
+                     },
 
-    UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
-    self.navigationItem.rightBarButtonItem = addButton;
+                   // Custom Transition
+                   @{kItemKeyTitle: @"Custom Transition",
+                     kItemKeyDescription: @"UIViewControllerAnimatedTransitioning, UIViewControllerTransitioningDelegate",
+                     kItemKeyClassPrefix: @"CustomTransition",
+                     },
+
+                   // 3D Map
+                   @{kItemKeyTitle: @"3D Map",
+                     kItemKeyDescription: @"3D Map using MKMapCamera",
+                     kItemKeyClassPrefix: @"Map3D",
+                     },
+
+                   // Motion Effect
+                   @{kItemKeyTitle: @"Motion Effects (Parallax)",
+                     kItemKeyDescription: @"Parallax effect using UIMotionEffect",
+                     kItemKeyClassPrefix: @"MotionEffect",
+                     },
+                   
+                   // Added Activity Types
+                   @{kItemKeyTitle: @"AirDrop/Flickr/Vimeo/ReadingList",
+                     kItemKeyDescription: @"New Activity Types: AirDrop, Post to Flickr / Vimeo, Add to ReadingList",
+                     kItemKeyClassPrefix: @"ActivityTypes",
+                     },
+                   
+                   // ...
+                   ];
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    
+    [super viewDidAppear:animated];
+    
+    // Needed after custome transition
+    self.navigationController.delegate = nil;
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
-- (void)insertNewObject:(id)sender
-{
-    if (!_objects) {
-        _objects = [[NSMutableArray alloc] init];
-    }
-    [_objects insertObject:[NSDate date] atIndex:0];
-    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
-    [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
-}
 
-#pragma mark - Table View
+// =============================================================================
+#pragma mark - UITableViewDataSource
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    
     return 1;
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-    return _objects.count;
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    
+    return [self.items count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
-
-    NSDate *object = _objects[indexPath.row];
-    cell.textLabel.text = [object description];
+    static NSString *CellIdentifier = @"Cell";
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    
+    if (cell == nil) {
+        
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle
+                                      reuseIdentifier:CellIdentifier];
+        
+        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+        cell.textLabel.textColor = [UIColor colorWithRed:51./255.
+                                                   green:153./255.
+                                                    blue:204./255.
+                                                   alpha:1.0];
+        cell.detailTextLabel.numberOfLines = 0;
+    }
+    
+	NSDictionary *info = [self.items objectAtIndex:indexPath.row];
+    cell.textLabel.text = info[kItemKeyTitle];
+    cell.detailTextLabel.text = info[kItemKeyDescription];
+    
     return cell;
 }
 
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
+
+// =============================================================================
+#pragma mark - UITableViewDelegate
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    return 70.0;
 }
 
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        [_objects removeObjectAtIndex:indexPath.row];
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+
+    NSDictionary *item = self.items[indexPath.row];
+    NSString *className = [item[kItemKeyClassPrefix] stringByAppendingString:@"ViewController"];
+    
+    if (NSClassFromString(className)) {
+
+        Class aClass = NSClassFromString(className);
+        id instance = [[aClass alloc] init];
+        
+        if ([instance isKindOfClass:[UIViewController class]]) {
+            
+            [(UIViewController *)instance setTitle:item[kItemKeyTitle]];
+            [self.navigationController pushViewController:(UIViewController *)instance
+                                                 animated:YES];
+        }
     }
-}
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
-{
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    if ([[segue identifier] isEqualToString:@"showDetail"]) {
-        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        NSDate *object = _objects[indexPath.row];
-        [[segue destinationViewController] setDetailItem:object];
-    }
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 @end
