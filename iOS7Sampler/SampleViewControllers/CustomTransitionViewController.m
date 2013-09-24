@@ -8,12 +8,14 @@
 
 #import "CustomTransitionViewController.h"
 #import "HUTransitionAnimator.h"
+#import "ZBFallenBricksAnimator.h"
 
 
 typedef enum {
     TransitionTypeNormal,
     TransitionTypeVerticalLines,
     TransitionTypeHorizontalLines,
+    TransitionTypeGravity,
 } TransitionType;
 
 
@@ -60,21 +62,24 @@ typedef enum {
                                                fromViewController:(UIViewController *)fromVC
                                                  toViewController:(UIViewController *)toVC
 {
-    HUTransitionAnimator *animator;
+    NSObject <UIViewControllerAnimatedTransitioning> *animator;
     
     switch (type) {
         case TransitionTypeVerticalLines:
             animator = [[HUTransitionVerticalLinesAnimator alloc] init];
+            [(HUTransitionAnimator *)animator setPresenting:NO];
             break;
         case TransitionTypeHorizontalLines:
             animator = [[HUTransitionHorizontalLinesAnimator alloc] init];
+            [(HUTransitionAnimator *)animator setPresenting:NO];
+            break;
+        case TransitionTypeGravity:
+            animator = [[ZBFallenBricksAnimator alloc] init];
             break;
         default:
             animator = nil;
     }
     
-    animator.presenting = (operation == UINavigationControllerOperationPop) ? NO : YES;
-
     return animator;
 }
 
@@ -91,6 +96,10 @@ typedef enum {
             
         case 1:
             type = TransitionTypeHorizontalLines;
+            break;
+
+        case 2:
+            type = TransitionTypeGravity;
             break;
     }
     

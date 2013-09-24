@@ -10,6 +10,12 @@
 		8A043B1817F0D34200DA84E9 /* Map3DViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A043B1617F0D34200DA84E9 /* Map3DViewController.m */; };
 		8A043B1917F0D34200DA84E9 /* Map3DViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A043B1717F0D34200DA84E9 /* Map3DViewController.xib */; };
 		8A043B1B17F0D3D600DA84E9 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A043B1A17F0D3D600DA84E9 /* MapKit.framework */; };
+		8A43D5B117F11BCA005E8BE8 /* MapSnapshotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A43D5AF17F11BCA005E8BE8 /* MapSnapshotViewController.m */; };
+		8A43D5B217F11BCA005E8BE8 /* MapSnapshotViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A43D5B017F11BCA005E8BE8 /* MapSnapshotViewController.xib */; };
+		8A43D5B717F11E72005E8BE8 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8A43D5B417F11E72005E8BE8 /* SVProgressHUD.bundle */; };
+		8A43D5B817F11E72005E8BE8 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A43D5B617F11E72005E8BE8 /* SVProgressHUD.m */; };
+		8A43D5D417F12307005E8BE8 /* ZBFallenBricksAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A43D5C917F12307005E8BE8 /* ZBFallenBricksAnimator.m */; };
+		8A43D5D817F12397005E8BE8 /* UIViewController+Animator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A43D5D717F12397005E8BE8 /* UIViewController+Animator.m */; };
 		8A7BF1C117ED384C004EF216 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A7BF1C017ED384C004EF216 /* Foundation.framework */; };
 		8A7BF1C317ED384C004EF216 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A7BF1C217ED384C004EF216 /* CoreGraphics.framework */; };
 		8A7BF1C517ED384C004EF216 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A7BF1C417ED384C004EF216 /* UIKit.framework */; };
@@ -107,6 +113,16 @@
 		8A043B1617F0D34200DA84E9 /* Map3DViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Map3DViewController.m; sourceTree = "<group>"; };
 		8A043B1717F0D34200DA84E9 /* Map3DViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Map3DViewController.xib; sourceTree = "<group>"; };
 		8A043B1A17F0D3D600DA84E9 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		8A43D5AE17F11BCA005E8BE8 /* MapSnapshotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapSnapshotViewController.h; sourceTree = "<group>"; };
+		8A43D5AF17F11BCA005E8BE8 /* MapSnapshotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapSnapshotViewController.m; sourceTree = "<group>"; };
+		8A43D5B017F11BCA005E8BE8 /* MapSnapshotViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapSnapshotViewController.xib; sourceTree = "<group>"; };
+		8A43D5B417F11E72005E8BE8 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		8A43D5B517F11E72005E8BE8 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		8A43D5B617F11E72005E8BE8 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+		8A43D5C817F12307005E8BE8 /* ZBFallenBricksAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBFallenBricksAnimator.h; sourceTree = "<group>"; };
+		8A43D5C917F12307005E8BE8 /* ZBFallenBricksAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBFallenBricksAnimator.m; sourceTree = "<group>"; };
+		8A43D5D617F12397005E8BE8 /* UIViewController+Animator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Animator.h"; sourceTree = "<group>"; };
+		8A43D5D717F12397005E8BE8 /* UIViewController+Animator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Animator.m"; sourceTree = "<group>"; };
 		8A7BF1BD17ED384B004EF216 /* iOS7Sampler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS7Sampler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A7BF1C017ED384C004EF216 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8A7BF1C217ED384C004EF216 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -230,6 +246,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8A43D5B317F11E72005E8BE8 /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				8A43D5B417F11E72005E8BE8 /* SVProgressHUD.bundle */,
+				8A43D5B517F11E72005E8BE8 /* SVProgressHUD.h */,
+				8A43D5B617F11E72005E8BE8 /* SVProgressHUD.m */,
+			);
+			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
+		8A43D5B917F12307005E8BE8 /* ZBCustomTransitions */ = {
+			isa = PBXGroup;
+			children = (
+				8A43D5D617F12397005E8BE8 /* UIViewController+Animator.h */,
+				8A43D5D717F12397005E8BE8 /* UIViewController+Animator.m */,
+				8A43D5C817F12307005E8BE8 /* ZBFallenBricksAnimator.h */,
+				8A43D5C917F12307005E8BE8 /* ZBFallenBricksAnimator.m */,
+			);
+			path = ZBCustomTransitions;
+			sourceTree = "<group>";
+		};
 		8A7BF1B417ED384B004EF216 = {
 			isa = PBXGroup;
 			children = (
@@ -331,6 +368,9 @@
 				8A043B1517F0D34200DA84E9 /* Map3DViewController.h */,
 				8A043B1617F0D34200DA84E9 /* Map3DViewController.m */,
 				8A043B1717F0D34200DA84E9 /* Map3DViewController.xib */,
+				8A43D5AE17F11BCA005E8BE8 /* MapSnapshotViewController.h */,
+				8A43D5AF17F11BCA005E8BE8 /* MapSnapshotViewController.m */,
+				8A43D5B017F11BCA005E8BE8 /* MapSnapshotViewController.xib */,
 			);
 			path = SampleViewControllers;
 			sourceTree = "<group>";
@@ -403,6 +443,8 @@
 		8A7BF3B117ED8B43004EF216 /* vendor */ = {
 			isa = PBXGroup;
 			children = (
+				8A43D5B917F12307005E8BE8 /* ZBCustomTransitions */,
+				8A43D5B317F11E72005E8BE8 /* SVProgressHUD */,
 				8A7BF3B217ED8B43004EF216 /* HUAnimator */,
 			);
 			path = vendor;
@@ -508,6 +550,7 @@
 				8A7BF3A417ED7F5D004EF216 /* stage_3@2x.png in Resources */,
 				8A7BF3A817ED7F5D004EF216 /* stage_7@2x.png in Resources */,
 				8A7BF37017ED5BB1004EF216 /* m20@2x.png in Resources */,
+				8A43D5B717F11E72005E8BE8 /* SVProgressHUD.bundle in Resources */,
 				8A7BF35E17ED5BB1004EF216 /* m1@2x.png in Resources */,
 				8A7BF35F17ED5BB1004EF216 /* m2@2x.png in Resources */,
 				8A7BF37517ED5BB1004EF216 /* m25@2x.png in Resources */,
@@ -558,6 +601,7 @@
 				8A7BF37817ED5BB1004EF216 /* m28@2x.png in Resources */,
 				8A7BF37917ED5BB1004EF216 /* m29@2x.png in Resources */,
 				8A7BF3AA17ED7F5D004EF216 /* stage_9@2x.png in Resources */,
+				8A43D5B217F11BCA005E8BE8 /* MapSnapshotViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -578,16 +622,20 @@
 			files = (
 				8A7BF1D117ED384C004EF216 /* AppDelegate.m in Sources */,
 				8A7BF39417ED7EF7004EF216 /* MotionEffectViewController.m in Sources */,
+				8A43D5B117F11BCA005E8BE8 /* MapSnapshotViewController.m in Sources */,
 				8A7BF3BB17ED8B43004EF216 /* HUTransitionAnimator.m in Sources */,
 				8A7BF38817ED6882004EF216 /* ActivityTypesViewController.m in Sources */,
 				8A7BF3AF17ED8A9E004EF216 /* CustomTransitionViewController.m in Sources */,
 				8A7BF1D717ED384C004EF216 /* MasterViewController.m in Sources */,
 				8A7BF1CD17ED384C004EF216 /* main.m in Sources */,
 				8A7BF29217ED4C9F004EF216 /* DynamicBehaviorsViewController.m in Sources */,
+				8A43D5B817F11E72005E8BE8 /* SVProgressHUD.m in Sources */,
+				8A43D5D417F12307005E8BE8 /* ZBFallenBricksAnimator.m in Sources */,
 				8A043B1817F0D34200DA84E9 /* Map3DViewController.m in Sources */,
 				8A7BF3BD17ED8B43004EF216 /* HUTransitionHorizontalLinesAnimator.m in Sources */,
 				8A7BF3BC17ED8B43004EF216 /* HUTransitionGhostAnimator.m in Sources */,
 				8A7BF38D17ED7897004EF216 /* SpeechSynthesisViewController.m in Sources */,
+				8A43D5D817F12397005E8BE8 /* UIViewController+Animator.m in Sources */,
 				8A7BF1DA17ED384C004EF216 /* DetailViewController.m in Sources */,
 				8A7BF3BE17ED8B43004EF216 /* HUTransitionVerticalLinesAnimator.m in Sources */,
 			);

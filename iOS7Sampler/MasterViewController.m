@@ -68,7 +68,11 @@
                      kItemKeyClassPrefix: @"ActivityTypes",
                      },
                    
-                   // ...
+                   // Static Map Snapshots
+                   @{kItemKeyTitle: @"Static Map Snapshots",
+                     kItemKeyDescription: @"Creating a snapshot with MKMapSnapshotOptions, MKMapSnapshotter.",
+                     kItemKeyClassPrefix: @"MapSnapshot",
+                     },
                    ];
 }
 
