@@ -20,6 +20,10 @@
 		8A43D5DD17F187BE005E8BE8 /* SpriteKitViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A43D5DB17F187BE005E8BE8 /* SpriteKitViewController.xib */; };
 		8A43D5E017F187D9005E8BE8 /* SampleScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A43D5DF17F187D9005E8BE8 /* SampleScene.m */; };
 		8A6DBC6817F18814004311FE /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A6DBC6717F18814004311FE /* SpriteKit.framework */; };
+		8A6DBC6C17F193FB004311FE /* MapOverlaysViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A6DBC6A17F193FB004311FE /* MapOverlaysViewController.m */; };
+		8A6DBC6D17F193FB004311FE /* MapOverlaysViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A6DBC6B17F193FB004311FE /* MapOverlaysViewController.xib */; };
+		8A6DBC7117F19718004311FE /* MapDirectionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A6DBC6F17F19718004311FE /* MapDirectionsViewController.m */; };
+		8A6DBC7217F19718004311FE /* MapDirectionsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A6DBC7017F19718004311FE /* MapDirectionsViewController.xib */; };
 		8A7BF1C117ED384C004EF216 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A7BF1C017ED384C004EF216 /* Foundation.framework */; };
 		8A7BF1C317ED384C004EF216 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A7BF1C217ED384C004EF216 /* CoreGraphics.framework */; };
 		8A7BF1C517ED384C004EF216 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A7BF1C417ED384C004EF216 /* UIKit.framework */; };
@@ -133,6 +137,12 @@
 		8A43D5DE17F187D9005E8BE8 /* SampleScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleScene.h; sourceTree = "<group>"; };
 		8A43D5DF17F187D9005E8BE8 /* SampleScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleScene.m; sourceTree = "<group>"; };
 		8A6DBC6717F18814004311FE /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		8A6DBC6917F193FB004311FE /* MapOverlaysViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapOverlaysViewController.h; sourceTree = "<group>"; };
+		8A6DBC6A17F193FB004311FE /* MapOverlaysViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapOverlaysViewController.m; sourceTree = "<group>"; };
+		8A6DBC6B17F193FB004311FE /* MapOverlaysViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapOverlaysViewController.xib; sourceTree = "<group>"; };
+		8A6DBC6E17F19718004311FE /* MapDirectionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapDirectionsViewController.h; sourceTree = "<group>"; };
+		8A6DBC6F17F19718004311FE /* MapDirectionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapDirectionsViewController.m; sourceTree = "<group>"; };
+		8A6DBC7017F19718004311FE /* MapDirectionsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapDirectionsViewController.xib; sourceTree = "<group>"; };
 		8A7BF1BD17ED384B004EF216 /* iOS7Sampler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS7Sampler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A7BF1C017ED384C004EF216 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8A7BF1C217ED384C004EF216 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -388,6 +398,12 @@
 				8A43D5DB17F187BE005E8BE8 /* SpriteKitViewController.xib */,
 				8A43D5DE17F187D9005E8BE8 /* SampleScene.h */,
 				8A43D5DF17F187D9005E8BE8 /* SampleScene.m */,
+				8A6DBC6917F193FB004311FE /* MapOverlaysViewController.h */,
+				8A6DBC6A17F193FB004311FE /* MapOverlaysViewController.m */,
+				8A6DBC6B17F193FB004311FE /* MapOverlaysViewController.xib */,
+				8A6DBC6E17F19718004311FE /* MapDirectionsViewController.h */,
+				8A6DBC6F17F19718004311FE /* MapDirectionsViewController.m */,
+				8A6DBC7017F19718004311FE /* MapDirectionsViewController.xib */,
 			);
 			path = SampleViewControllers;
 			sourceTree = "<group>";
@@ -559,6 +575,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A7BF36D17ED5BB1004EF216 /* m17@2x.png in Resources */,
+				8A6DBC7217F19718004311FE /* MapDirectionsViewController.xib in Resources */,
 				8A7BF36317ED5BB1004EF216 /* m7@2x.png in Resources */,
 				8A7BF36417ED5BB1004EF216 /* m8@2x.png in Resources */,
 				8A7BF37717ED5BB1004EF216 /* m27@2x.png in Resources */,
@@ -610,6 +627,7 @@
 				8A7BF36617ED5BB1004EF216 /* m10@2x.png in Resources */,
 				8A7BF1D417ED384C004EF216 /* Main.storyboard in Resources */,
 				8A7BF3A617ED7F5D004EF216 /* stage_5@2x.png in Resources */,
+				8A6DBC6D17F193FB004311FE /* MapOverlaysViewController.xib in Resources */,
 				8A7BF37C17ED5BB1004EF216 /* m32@2x.png in Resources */,
 				8A7BF36F17ED5BB1004EF216 /* m19@2x.png in Resources */,
 				8A7BF36217ED5BB1004EF216 /* m6@2x.png in Resources */,
@@ -643,12 +661,14 @@
 				8A7BF39417ED7EF7004EF216 /* MotionEffectViewController.m in Sources */,
 				8A43D5B117F11BCA005E8BE8 /* MapSnapshotViewController.m in Sources */,
 				8A7BF3BB17ED8B43004EF216 /* HUTransitionAnimator.m in Sources */,
+				8A6DBC7117F19718004311FE /* MapDirectionsViewController.m in Sources */,
 				8A7BF38817ED6882004EF216 /* ActivityTypesViewController.m in Sources */,
 				8A7BF3AF17ED8A9E004EF216 /* CustomTransitionViewController.m in Sources */,
 				8A7BF1D717ED384C004EF216 /* MasterViewController.m in Sources */,
 				8A7BF1CD17ED384C004EF216 /* main.m in Sources */,
 				8A7BF29217ED4C9F004EF216 /* DynamicBehaviorsViewController.m in Sources */,
 				8A43D5B817F11E72005E8BE8 /* SVProgressHUD.m in Sources */,
+				8A6DBC6C17F193FB004311FE /* MapOverlaysViewController.m in Sources */,
 				8A43D5D417F12307005E8BE8 /* ZBFallenBricksAnimator.m in Sources */,
 				8A043B1817F0D34200DA84E9 /* Map3DViewController.m in Sources */,
 				8A7BF3BD17ED8B43004EF216 /* HUTransitionHorizontalLinesAnimator.m in Sources */,

@@ -62,6 +62,12 @@
                      kItemKeyClassPrefix: @"SpriteKit",
                      },
 
+                   // Map Directions
+                   @{kItemKeyTitle: @"Map Directions",
+                     kItemKeyDescription: @"Requesting and draw directions using MKDirections, MKDirectionsResponse and MKPolylineRenderer.",
+                     kItemKeyClassPrefix: @"MapDirections",
+                     },
+
                    // Motion Effect
                    @{kItemKeyTitle: @"Motion Effects (Parallax)",
                      kItemKeyDescription: @"Parallax effect using UIMotionEffect",
