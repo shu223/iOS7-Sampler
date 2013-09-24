@@ -18,6 +18,8 @@ Dynamic Behaviours using UIDynamicAnimator, UIGravityBehavior, UICollisionBehavi
 
 Synthesized speech from text using AVSpeechSynthesizer and AVSpeechUtterance.
 
+![](http://f.cl.ly/items/3y0i3B0R3O3E1N1s1w20/speech___.png)
+
 ###Custom Transition
 
 UIViewControllerAnimatedTransitioning, UIViewControllerTransitioningDelegate.
@@ -56,3 +58,4 @@ New Activity Types: AirDrop, Post to Flickr / Vimeo, Add to ReadingList
 
 Creating a snapshot with MKMapSnapshotOptions, MKMapSnapshotter.
 
+![](http://f.cl.ly/items/2Q3d472D37002f063716/map_snapshot.png)
