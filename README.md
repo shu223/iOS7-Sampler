@@ -3,11 +3,16 @@ iOS7-Sampler
 
 Code examples for the new functions of iOS 7.
 
+![](http://f.cl.ly/items/1t250s1N3z0c1g2H1N0P/iOS7Sampler1_r1_c1.png)
+
+
 ##Contents
 
 ###Dynamic Behaviors
 
-Dynamic Behaviours using UIDynamicAnimator, UICollisionBehavior, etc...
+Dynamic Behaviours using UIDynamicAnimator, UIGravityBehavior, UICollisionBehavior, UIDynamicItemBehavior.
+
+![](http://f.cl.ly/items/3M2b110A141D1O0C0D0e/dynamics1__.png)
 
 ###Speech Synthesis
 
@@ -18,20 +23,34 @@ Synthesized speech from text using AVSpeechSynthesizer and AVSpeechUtterance.
 UIViewControllerAnimatedTransitioning, UIViewControllerTransitioningDelegate.
 
 - [ZBCustomTransitions](https://github.com/zonble/ZBCustomTransitions)
+
+![](http://f.cl.ly/items/2P0a2Z3W0W2P3p1W2L0X/transition_lines.png)
+
+
 - [HUAnimator](https://github.com/cinkster/HUAnimator)
+
+![](http://f.cl.ly/items/2S0X383R2T1j1X2Y1e3t/transition_gravity.png)
 
 
 ###3D Map
 
 3D Map using MKMapCamera.
 
-###Motion Effects (Parallax)",
+![](http://f.cl.ly/items/0R2T2a2s1A3s1G2n3I25/3DMap_.png)
+
+###Motion Effects (Parallax)
 
 Parallax effect using UIMotionEffect.
+
+![](http://f.cl.ly/items/3L2N2m3M1i0G45081o0j/parallax_.png)
+
 
 ###AirDrop/Flickr/Vimeo/ReadingList
 
 New Activity Types: AirDrop, Post to Flickr / Vimeo, Add to ReadingList
+
+![](http://f.cl.ly/items/2V2E3P2f1X1z0E0E0E47/AirDrop_.png)
+
 
 ###Static Map Snapshots
 
