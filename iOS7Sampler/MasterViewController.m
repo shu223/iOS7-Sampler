@@ -55,6 +55,12 @@
                      kItemKeyDescription: @"3D Map using MKMapCamera",
                      kItemKeyClassPrefix: @"Map3D",
                      },
+                   
+                   // Sprite Kit
+                   @{kItemKeyTitle: @"Sprite Kit",
+                     kItemKeyDescription: @"A sample of Sprite Kit using SKView, SKScene, SKSpriteNode, SKAction.",
+                     kItemKeyClassPrefix: @"SpriteKit",
+                     },
 
                    // Motion Effect
                    @{kItemKeyTitle: @"Motion Effects (Parallax)",

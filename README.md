@@ -40,6 +40,14 @@ UIViewControllerAnimatedTransitioning, UIViewControllerTransitioningDelegate.
 
 ![](http://f.cl.ly/items/0R2T2a2s1A3s1G2n3I25/3DMap_.png)
 
+
+###Sprite Kit
+
+A sample of Sprite Kit using SKView, SKScene, SKSpriteNode, SKAction.
+
+![](https://qiita-image-store.s3.amazonaws.com/0/3180/98fcfb76-5ac4-6c3b-cfca-a008790c948a.png)
+
+
 ###Motion Effects (Parallax)
 
 Parallax effect using UIMotionEffect.
