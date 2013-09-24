@@ -41,6 +41,12 @@ UIViewControllerAnimatedTransitioning, UIViewControllerTransitioningDelegate.
 ![](http://f.cl.ly/items/0R2T2a2s1A3s1G2n3I25/3DMap_.png)
 
 
+###Smile Detection
+
+Smile Detection using CIDetectorSmile and new properties of CIFeature such as "bounds".
+
+![smile_.png](https://qiita-image-store.s3.amazonaws.com/0/3180/6b5202e3-749d-d5f8-88ba-1877290e33b2.png)
+
 ###Sprite Kit
 
 A sample of Sprite Kit using SKView, SKScene, SKSpriteNode, SKAction.

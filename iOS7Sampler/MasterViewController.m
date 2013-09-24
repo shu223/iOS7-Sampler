@@ -56,6 +56,12 @@
                      kItemKeyClassPrefix: @"Map3D",
                      },
                    
+                   // Smile Detection
+                   @{kItemKeyTitle: @"Smile Detection",
+                     kItemKeyDescription: @"Smile Detection using CIDetectorSmile and new properties of CIFeature such as \"bounds\".",
+                     kItemKeyClassPrefix: @"SmileDetection",
+                     },
+                   
                    // Sprite Kit
                    @{kItemKeyTitle: @"Sprite Kit",
                      kItemKeyDescription: @"A sample of Sprite Kit using SKView, SKScene, SKSpriteNode, SKAction.",
