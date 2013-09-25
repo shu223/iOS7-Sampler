@@ -47,6 +47,12 @@ Smile Detection using CIDetectorSmile and new properties of CIFeature such as "b
 
 ![smile_.png](https://qiita-image-store.s3.amazonaws.com/0/3180/6b5202e3-749d-d5f8-88ba-1877290e33b2.png)
 
+
+###Image Filters
+
+![](http://f.cl.ly/items/3K0T3c012o062b0o061c/imagefilters__.png)
+
+
 ###Sprite Kit
 
 A sample of Sprite Kit using SKView, SKScene, SKSpriteNode, SKAction.
@@ -79,6 +85,7 @@ New Activity Types: AirDrop, Post to Flickr / Vimeo, Add to ReadingList
 Generating QR Code with CIQRCodeGenerator.
 
 ![](http://f.cl.ly/items/3E1q1t1L2n142r2i2I3S/qrcode__.png)
+
 
 ###Static Map Snapshots
 

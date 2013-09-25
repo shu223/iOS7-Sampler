@@ -80,6 +80,12 @@
                      kItemKeyClassPrefix: @"MotionEffect",
                      },
                    
+                   // Image Filters
+                   @{kItemKeyTitle: @"Image Filters",
+                     kItemKeyDescription: @"CIFilter.",
+                     kItemKeyClassPrefix: @"ImageFilters",
+                     },
+
                    // Added Activity Types
                    @{kItemKeyTitle: @"AirDrop/Flickr/Vimeo/ReadingList",
                      kItemKeyDescription: @"New Activity Types: AirDrop, Post to Flickr / Vimeo, Add to ReadingList",
