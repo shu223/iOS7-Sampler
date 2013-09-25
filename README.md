@@ -50,6 +50,22 @@ Smile Detection using CIDetectorSmile and new properties of CIFeature such as "b
 
 ###Image Filters
 
+New filters of CIFilter.
+
+
+- CILinearToSRGBToneCurve
+- CIPhotoEffectChrome
+- CIPhotoEffectFade
+- CIPhotoEffectInstant
+- CIPhotoEffectMono
+- CIPhotoEffectNoir
+- CIPhotoEffectProcess
+- CIPhotoEffectTonal
+- CIPhotoEffectTransfer
+- CISRGBToneCurveToLinear
+- CIVignetteEffect
+
+
 ![](http://f.cl.ly/items/3K0T3c012o062b0o061c/imagefilters__.png)
 
 

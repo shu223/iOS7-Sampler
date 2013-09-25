@@ -62,6 +62,12 @@
                      kItemKeyClassPrefix: @"SmileDetection",
                      },
                    
+                   // Image Filters
+                   @{kItemKeyTitle: @"Image Filters",
+                     kItemKeyDescription: @"New filters of CIFilter such as CIPhotoEffectProcess, CIVignetteEffect, CILinearToSRGBToneCurve, ...",
+                     kItemKeyClassPrefix: @"ImageFilters",
+                     },
+                   
                    // Sprite Kit
                    @{kItemKeyTitle: @"Sprite Kit",
                      kItemKeyDescription: @"A sample of Sprite Kit using SKView, SKScene, SKSpriteNode, SKAction.",
@@ -80,12 +86,6 @@
                      kItemKeyClassPrefix: @"MotionEffect",
                      },
                    
-                   // Image Filters
-                   @{kItemKeyTitle: @"Image Filters",
-                     kItemKeyDescription: @"CIFilter.",
-                     kItemKeyClassPrefix: @"ImageFilters",
-                     },
-
                    // Added Activity Types
                    @{kItemKeyTitle: @"AirDrop/Flickr/Vimeo/ReadingList",
                      kItemKeyDescription: @"New Activity Types: AirDrop, Post to Flickr / Vimeo, Add to ReadingList",
