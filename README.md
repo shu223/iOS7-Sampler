@@ -108,3 +108,10 @@ Generating QR Code with CIQRCodeGenerator.
 Creating a snapshot with MKMapSnapshotOptions, MKMapSnapshotter.
 
 ![](http://f.cl.ly/items/2Q3d472D37002f063716/map_snapshot.png)
+
+
+##See Also
+
+###[Open source collection for Flat Design UI](http://d.hatena.ne.jp/shu223/20130617/1371606128)
+
+A collection of OSS which helps you **implement Flat Design UI on your current version of iOS (iOS5,6) just like that on iOS 7.**
