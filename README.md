@@ -74,6 +74,12 @@ New Activity Types: AirDrop, Post to Flickr / Vimeo, Add to ReadingList
 ![](http://f.cl.ly/items/2V2E3P2f1X1z0E0E0E47/AirDrop_.png)
 
 
+###QR Code Generator
+
+Generating QR Code with CIQRCodeGenerator.
+
+![](http://f.cl.ly/items/3E1q1t1L2n142r2i2I3S/qrcode__.png)
+
 ###Static Map Snapshots
 
 Creating a snapshot with MKMapSnapshotOptions, MKMapSnapshotter.

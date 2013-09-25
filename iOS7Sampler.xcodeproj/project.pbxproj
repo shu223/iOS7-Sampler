@@ -27,6 +27,9 @@
 		8A6DBC7617F251FB004311FE /* SmileDetectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A6DBC7417F251FB004311FE /* SmileDetectionViewController.m */; };
 		8A6DBC7717F251FB004311FE /* SmileDetectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A6DBC7517F251FB004311FE /* SmileDetectionViewController.xib */; };
 		8A6DBC7917F252FC004311FE /* face_detection.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8A6DBC7817F252FC004311FE /* face_detection.jpg */; };
+		8A6DBC7D17F2C33D004311FE /* QRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A6DBC7B17F2C33D004311FE /* QRCodeViewController.m */; };
+		8A6DBC7E17F2C33D004311FE /* QRCodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A6DBC7C17F2C33D004311FE /* QRCodeViewController.xib */; };
+		8A6DBC8017F2C352004311FE /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A6DBC7F17F2C352004311FE /* CoreImage.framework */; };
 		8A7BF1C117ED384C004EF216 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A7BF1C017ED384C004EF216 /* Foundation.framework */; };
 		8A7BF1C317ED384C004EF216 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A7BF1C217ED384C004EF216 /* CoreGraphics.framework */; };
 		8A7BF1C517ED384C004EF216 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A7BF1C417ED384C004EF216 /* UIKit.framework */; };
@@ -150,6 +153,10 @@
 		8A6DBC7417F251FB004311FE /* SmileDetectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmileDetectionViewController.m; sourceTree = "<group>"; };
 		8A6DBC7517F251FB004311FE /* SmileDetectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SmileDetectionViewController.xib; sourceTree = "<group>"; };
 		8A6DBC7817F252FC004311FE /* face_detection.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = face_detection.jpg; sourceTree = "<group>"; };
+		8A6DBC7A17F2C33D004311FE /* QRCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeViewController.h; sourceTree = "<group>"; };
+		8A6DBC7B17F2C33D004311FE /* QRCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeViewController.m; sourceTree = "<group>"; };
+		8A6DBC7C17F2C33D004311FE /* QRCodeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QRCodeViewController.xib; sourceTree = "<group>"; };
+		8A6DBC7F17F2C352004311FE /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		8A7BF1BD17ED384B004EF216 /* iOS7Sampler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS7Sampler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A7BF1C017ED384C004EF216 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8A7BF1C217ED384C004EF216 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -252,6 +259,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A6DBC8017F2C352004311FE /* CoreImage.framework in Frameworks */,
 				8A6DBC6817F18814004311FE /* SpriteKit.framework in Frameworks */,
 				8A043B1B17F0D3D600DA84E9 /* MapKit.framework in Frameworks */,
 				8A7BF39017ED79B1004EF216 /* AVFoundation.framework in Frameworks */,
@@ -319,6 +327,7 @@
 		8A7BF1BF17ED384C004EF216 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8A6DBC7F17F2C352004311FE /* CoreImage.framework */,
 				8A6DBC6717F18814004311FE /* SpriteKit.framework */,
 				8A043B1A17F0D3D600DA84E9 /* MapKit.framework */,
 				8A7BF38F17ED79B1004EF216 /* AVFoundation.framework */,
@@ -414,6 +423,9 @@
 				8A6DBC7317F251FB004311FE /* SmileDetectionViewController.h */,
 				8A6DBC7417F251FB004311FE /* SmileDetectionViewController.m */,
 				8A6DBC7517F251FB004311FE /* SmileDetectionViewController.xib */,
+				8A6DBC7A17F2C33D004311FE /* QRCodeViewController.h */,
+				8A6DBC7B17F2C33D004311FE /* QRCodeViewController.m */,
+				8A6DBC7C17F2C33D004311FE /* QRCodeViewController.xib */,
 			);
 			path = SampleViewControllers;
 			sourceTree = "<group>";
@@ -606,6 +618,7 @@
 				8A7BF3A917ED7F5D004EF216 /* stage_8@2x.png in Resources */,
 				8A043B1917F0D34200DA84E9 /* Map3DViewController.xib in Resources */,
 				8A7BF38417ED5BB1004EF216 /* m40@2x.png in Resources */,
+				8A6DBC7E17F2C33D004311FE /* QRCodeViewController.xib in Resources */,
 				8A7BF36C17ED5BB1004EF216 /* m16@2x.png in Resources */,
 				8A7BF37617ED5BB1004EF216 /* m26@2x.png in Resources */,
 				8A7BF37217ED5BB1004EF216 /* m22@2x.png in Resources */,
@@ -683,6 +696,7 @@
 				8A43D5B817F11E72005E8BE8 /* SVProgressHUD.m in Sources */,
 				8A6DBC6C17F193FB004311FE /* MapOverlaysViewController.m in Sources */,
 				8A43D5D417F12307005E8BE8 /* ZBFallenBricksAnimator.m in Sources */,
+				8A6DBC7D17F2C33D004311FE /* QRCodeViewController.m in Sources */,
 				8A043B1817F0D34200DA84E9 /* Map3DViewController.m in Sources */,
 				8A7BF3BD17ED8B43004EF216 /* HUTransitionHorizontalLinesAnimator.m in Sources */,
 				8A6DBC7617F251FB004311FE /* SmileDetectionViewController.m in Sources */,

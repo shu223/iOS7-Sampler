@@ -86,6 +86,12 @@
                      kItemKeyClassPrefix: @"ActivityTypes",
                      },
                    
+                   // QR Code Generator
+                   @{kItemKeyTitle: @"QR Code Generator",
+                     kItemKeyDescription: @"Generating QR Code with CIQRCodeGenerator.",
+                     kItemKeyClassPrefix: @"QRCode",
+                     },
+
                    // Static Map Snapshots
                    @{kItemKeyTitle: @"Static Map Snapshots",
                      kItemKeyDescription: @"Creating a snapshot with MKMapSnapshotOptions, MKMapSnapshotter.",
