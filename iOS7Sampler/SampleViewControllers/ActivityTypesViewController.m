@@ -45,12 +45,11 @@
     
     NSArray *activities = @[UIActivityTypePostToFacebook,
                             UIActivityTypePostToTwitter,
+                            UIActivityTypePostToWeibo,
                             UIActivityTypeMail,
                             UIActivityTypeMessage,
-                            UIActivityTypePostToWeibo,
                             UIActivityTypePrint,
                             UIActivityTypeSaveToCameraRoll,
-                            UIActivityTypePostToWeibo,
                             UIActivityTypeCopyToPasteboard,
                             UIActivityTypeAssignToContact];
     
