@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7AB9989117F5D776003E769F /* MultipeerConnectivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AB9988F17F5D776003E769F /* MultipeerConnectivityViewController.m */; };
+		7AB9989217F5D776003E769F /* MultipeerConnectivityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AB9989017F5D776003E769F /* MultipeerConnectivityViewController.xib */; };
 		8A043B1817F0D34200DA84E9 /* Map3DViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A043B1617F0D34200DA84E9 /* Map3DViewController.m */; };
 		8A043B1917F0D34200DA84E9 /* Map3DViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A043B1717F0D34200DA84E9 /* Map3DViewController.xib */; };
 		8A043B1B17F0D3D600DA84E9 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A043B1A17F0D3D600DA84E9 /* MapKit.framework */; };
@@ -126,6 +128,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7AB9988E17F5D776003E769F /* MultipeerConnectivityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultipeerConnectivityViewController.h; sourceTree = "<group>"; };
+		7AB9988F17F5D776003E769F /* MultipeerConnectivityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultipeerConnectivityViewController.m; sourceTree = "<group>"; };
+		7AB9989017F5D776003E769F /* MultipeerConnectivityViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MultipeerConnectivityViewController.xib; sourceTree = "<group>"; };
 		8A043B1517F0D34200DA84E9 /* Map3DViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Map3DViewController.h; sourceTree = "<group>"; };
 		8A043B1617F0D34200DA84E9 /* Map3DViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Map3DViewController.m; sourceTree = "<group>"; };
 		8A043B1717F0D34200DA84E9 /* Map3DViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Map3DViewController.xib; sourceTree = "<group>"; };
@@ -436,6 +441,9 @@
 				8A6DBC8117F2CDC0004311FE /* ImageFiltersViewController.h */,
 				8A6DBC8217F2CDC0004311FE /* ImageFiltersViewController.m */,
 				8A6DBC8317F2CDC0004311FE /* ImageFiltersViewController.xib */,
+				7AB9988E17F5D776003E769F /* MultipeerConnectivityViewController.h */,
+				7AB9988F17F5D776003E769F /* MultipeerConnectivityViewController.m */,
+				7AB9989017F5D776003E769F /* MultipeerConnectivityViewController.xib */,
 			);
 			path = SampleViewControllers;
 			sourceTree = "<group>";
@@ -655,6 +663,7 @@
 				8A7BF37317ED5BB1004EF216 /* m23@2x.png in Resources */,
 				8A7BF36717ED5BB1004EF216 /* m11@2x.png in Resources */,
 				8A7BF3A217ED7F5D004EF216 /* stage_1@2x.png in Resources */,
+				7AB9989217F5D776003E769F /* MultipeerConnectivityViewController.xib in Resources */,
 				8A7BF36A17ED5BB1004EF216 /* m14@2x.png in Resources */,
 				8A7BF36917ED5BB1004EF216 /* m13@2x.png in Resources */,
 				8A7BF1CB17ED384C004EF216 /* InfoPlist.strings in Resources */,
@@ -698,6 +707,7 @@
 				8A43D5E017F187D9005E8BE8 /* SampleScene.m in Sources */,
 				8A7BF1D117ED384C004EF216 /* AppDelegate.m in Sources */,
 				8A7BF39417ED7EF7004EF216 /* MotionEffectViewController.m in Sources */,
+				7AB9989117F5D776003E769F /* MultipeerConnectivityViewController.m in Sources */,
 				8A43D5B117F11BCA005E8BE8 /* MapSnapshotViewController.m in Sources */,
 				8A7BF3BB17ED8B43004EF216 /* HUTransitionAnimator.m in Sources */,
 				8A6DBC7117F19718004311FE /* MapDirectionsViewController.m in Sources */,

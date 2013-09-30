@@ -103,6 +103,12 @@
                      kItemKeyDescription: @"Creating a snapshot with MKMapSnapshotOptions, MKMapSnapshotter.",
                      kItemKeyClassPrefix: @"MapSnapshot",
                      },
+
+                   // MultipeerConnectivity
+                   @{kItemKeyTitle: @"MultipeerConnectivity",
+                     kItemKeyDescription: @"Creating a local network sharing connection over Wi-Fi or Bluetooth LE.",
+                     kItemKeyClassPrefix: @"MultipeerConnectivity",
+                     },
                    ];
 }
 
