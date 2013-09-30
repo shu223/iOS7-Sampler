@@ -86,6 +86,12 @@
                      kItemKeyClassPrefix: @"MotionEffect",
                      },
                    
+                   // MultipeerConnectivity
+                   @{kItemKeyTitle: @"Multipeer Connectivity",
+                     kItemKeyDescription: @"Creating a local network sharing connection over Wi-Fi or Bluetooth LE.",
+                     kItemKeyClassPrefix: @"MultipeerConnectivity",
+                     },
+                   
                    // Added Activity Types
                    @{kItemKeyTitle: @"AirDrop/Flickr/Vimeo/ReadingList",
                      kItemKeyDescription: @"New Activity Types: AirDrop, Post to Flickr / Vimeo, Add to ReadingList",
@@ -102,12 +108,6 @@
                    @{kItemKeyTitle: @"Static Map Snapshots",
                      kItemKeyDescription: @"Creating a snapshot with MKMapSnapshotOptions, MKMapSnapshotter.",
                      kItemKeyClassPrefix: @"MapSnapshot",
-                     },
-
-                   // MultipeerConnectivity
-                   @{kItemKeyTitle: @"MultipeerConnectivity",
-                     kItemKeyDescription: @"Creating a local network sharing connection over Wi-Fi or Bluetooth LE.",
-                     kItemKeyClassPrefix: @"MultipeerConnectivity",
                      },
                    ];
 }

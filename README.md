@@ -89,6 +89,13 @@ Parallax effect using UIMotionEffect.
 ![](http://f.cl.ly/items/3L2N2m3M1i0G45081o0j/parallax_.png)
 
 
+###Multipeer Connectivity
+
+Creating a local network sharing connection over Wi-Fi or Bluetooth LE.
+
+![](http://f.cl.ly/items/3T432y3G1w1S1u2W0X0q/multipeer.png)
+
+
 ###AirDrop/Flickr/Vimeo/ReadingList
 
 New Activity Types: AirDrop, Post to Flickr / Vimeo, Add to ReadingList
