@@ -115,6 +115,9 @@
 		8A7BF3BC17ED8B43004EF216 /* HUTransitionGhostAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A7BF3B617ED8B43004EF216 /* HUTransitionGhostAnimator.m */; };
 		8A7BF3BD17ED8B43004EF216 /* HUTransitionHorizontalLinesAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A7BF3B817ED8B43004EF216 /* HUTransitionHorizontalLinesAnimator.m */; };
 		8A7BF3BE17ED8B43004EF216 /* HUTransitionVerticalLinesAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A7BF3BA17ED8B43004EF216 /* HUTransitionVerticalLinesAnimator.m */; };
+		8AEF0F9417FBCCF600D2B9BE /* ReadingListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AEF0F9217FBCCF600D2B9BE /* ReadingListViewController.m */; };
+		8AEF0F9517FBCCF600D2B9BE /* ReadingListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8AEF0F9317FBCCF600D2B9BE /* ReadingListViewController.xib */; };
+		8AEF0F9717FBCDDB00D2B9BE /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AEF0F9617FBCDDB00D2B9BE /* SafariServices.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -264,6 +267,10 @@
 		8A7BF3B817ED8B43004EF216 /* HUTransitionHorizontalLinesAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HUTransitionHorizontalLinesAnimator.m; sourceTree = "<group>"; };
 		8A7BF3B917ED8B43004EF216 /* HUTransitionVerticalLinesAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HUTransitionVerticalLinesAnimator.h; sourceTree = "<group>"; };
 		8A7BF3BA17ED8B43004EF216 /* HUTransitionVerticalLinesAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HUTransitionVerticalLinesAnimator.m; sourceTree = "<group>"; };
+		8AEF0F9117FBCCF600D2B9BE /* ReadingListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadingListViewController.h; sourceTree = "<group>"; };
+		8AEF0F9217FBCCF600D2B9BE /* ReadingListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadingListViewController.m; sourceTree = "<group>"; };
+		8AEF0F9317FBCCF600D2B9BE /* ReadingListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReadingListViewController.xib; sourceTree = "<group>"; };
+		8AEF0F9617FBCDDB00D2B9BE /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -271,6 +278,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AEF0F9717FBCDDB00D2B9BE /* SafariServices.framework in Frameworks */,
 				8A6DBC8017F2C352004311FE /* CoreImage.framework in Frameworks */,
 				8A6DBC6817F18814004311FE /* SpriteKit.framework in Frameworks */,
 				8A043B1B17F0D3D600DA84E9 /* MapKit.framework in Frameworks */,
@@ -339,6 +347,7 @@
 		8A7BF1BF17ED384C004EF216 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8AEF0F9617FBCDDB00D2B9BE /* SafariServices.framework */,
 				8A6DBC7F17F2C352004311FE /* CoreImage.framework */,
 				8A6DBC6717F18814004311FE /* SpriteKit.framework */,
 				8A043B1A17F0D3D600DA84E9 /* MapKit.framework */,
@@ -444,6 +453,9 @@
 				7AB9988E17F5D776003E769F /* MultipeerConnectivityViewController.h */,
 				7AB9988F17F5D776003E769F /* MultipeerConnectivityViewController.m */,
 				7AB9989017F5D776003E769F /* MultipeerConnectivityViewController.xib */,
+				8AEF0F9117FBCCF600D2B9BE /* ReadingListViewController.h */,
+				8AEF0F9217FBCCF600D2B9BE /* ReadingListViewController.m */,
+				8AEF0F9317FBCCF600D2B9BE /* ReadingListViewController.xib */,
 			);
 			path = SampleViewControllers;
 			sourceTree = "<group>";
@@ -620,6 +632,7 @@
 				8A6DBC7217F19718004311FE /* MapDirectionsViewController.xib in Resources */,
 				8A7BF36317ED5BB1004EF216 /* m7@2x.png in Resources */,
 				8A7BF36417ED5BB1004EF216 /* m8@2x.png in Resources */,
+				8AEF0F9517FBCCF600D2B9BE /* ReadingListViewController.xib in Resources */,
 				8A7BF37717ED5BB1004EF216 /* m27@2x.png in Resources */,
 				8A7BF36B17ED5BB1004EF216 /* m15@2x.png in Resources */,
 				8A7BF3A717ED7F5D004EF216 /* stage_6@2x.png in Resources */,
@@ -727,6 +740,7 @@
 				8A43D5DC17F187BE005E8BE8 /* SpriteKitViewController.m in Sources */,
 				8A7BF3BC17ED8B43004EF216 /* HUTransitionGhostAnimator.m in Sources */,
 				8A7BF38D17ED7897004EF216 /* SpeechSynthesisViewController.m in Sources */,
+				8AEF0F9417FBCCF600D2B9BE /* ReadingListViewController.m in Sources */,
 				8A43D5D817F12397005E8BE8 /* UIViewController+Animator.m in Sources */,
 				8A7BF1DA17ED384C004EF216 /* DetailViewController.m in Sources */,
 				8A7BF3BE17ED8B43004EF216 /* HUTransitionVerticalLinesAnimator.m in Sources */,

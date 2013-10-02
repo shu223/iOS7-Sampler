@@ -109,6 +109,12 @@
                      kItemKeyDescription: @"Creating a snapshot with MKMapSnapshotOptions, MKMapSnapshotter.",
                      kItemKeyClassPrefix: @"MapSnapshot",
                      },
+
+                   // Reading List
+                   @{kItemKeyTitle: @"Safari Reading List",
+                     kItemKeyDescription: @"Adding an item to the Safari Reading List with the new Safari Services framework.",
+                     kItemKeyClassPrefix: @"ReadingList",
+                     },
                    ];
 }
 
