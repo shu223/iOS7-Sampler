@@ -104,6 +104,12 @@
                      kItemKeyClassPrefix: @"QRCode",
                      },
 
+                   // Motion Activity Tracking
+                   @{kItemKeyTitle: @"Motion Activity Tracking",
+                     kItemKeyDescription: @"Counting steps and monitoring the activity using CMStepCounter and CMMotionActivityManager. It works only on iPhone5s (M7 chip).",
+                     kItemKeyClassPrefix: @"ActivityTracking",
+                     },
+                   
                    // Static Map Snapshots
                    @{kItemKeyTitle: @"Static Map Snapshots",
                      kItemKeyDescription: @"Creating a snapshot with MKMapSnapshotOptions, MKMapSnapshotter.",

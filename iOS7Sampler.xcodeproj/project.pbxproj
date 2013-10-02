@@ -118,6 +118,9 @@
 		8AEF0F9417FBCCF600D2B9BE /* ReadingListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AEF0F9217FBCCF600D2B9BE /* ReadingListViewController.m */; };
 		8AEF0F9517FBCCF600D2B9BE /* ReadingListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8AEF0F9317FBCCF600D2B9BE /* ReadingListViewController.xib */; };
 		8AEF0F9717FBCDDB00D2B9BE /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AEF0F9617FBCDDB00D2B9BE /* SafariServices.framework */; };
+		8AEF0F9B17FC19C200D2B9BE /* ActivityTrackingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AEF0F9917FC19C200D2B9BE /* ActivityTrackingViewController.m */; };
+		8AEF0F9C17FC19C200D2B9BE /* ActivityTrackingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8AEF0F9A17FC19C200D2B9BE /* ActivityTrackingViewController.xib */; };
+		8AEF0F9E17FC1BE200D2B9BE /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AEF0F9D17FC1BE200D2B9BE /* CoreMotion.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -271,6 +274,10 @@
 		8AEF0F9217FBCCF600D2B9BE /* ReadingListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadingListViewController.m; sourceTree = "<group>"; };
 		8AEF0F9317FBCCF600D2B9BE /* ReadingListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReadingListViewController.xib; sourceTree = "<group>"; };
 		8AEF0F9617FBCDDB00D2B9BE /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		8AEF0F9817FC19C200D2B9BE /* ActivityTrackingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityTrackingViewController.h; sourceTree = "<group>"; };
+		8AEF0F9917FC19C200D2B9BE /* ActivityTrackingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityTrackingViewController.m; sourceTree = "<group>"; };
+		8AEF0F9A17FC19C200D2B9BE /* ActivityTrackingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActivityTrackingViewController.xib; sourceTree = "<group>"; };
+		8AEF0F9D17FC1BE200D2B9BE /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -278,6 +285,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AEF0F9E17FC1BE200D2B9BE /* CoreMotion.framework in Frameworks */,
 				8AEF0F9717FBCDDB00D2B9BE /* SafariServices.framework in Frameworks */,
 				8A6DBC8017F2C352004311FE /* CoreImage.framework in Frameworks */,
 				8A6DBC6817F18814004311FE /* SpriteKit.framework in Frameworks */,
@@ -347,6 +355,7 @@
 		8A7BF1BF17ED384C004EF216 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8AEF0F9D17FC1BE200D2B9BE /* CoreMotion.framework */,
 				8AEF0F9617FBCDDB00D2B9BE /* SafariServices.framework */,
 				8A6DBC7F17F2C352004311FE /* CoreImage.framework */,
 				8A6DBC6717F18814004311FE /* SpriteKit.framework */,
@@ -456,6 +465,9 @@
 				8AEF0F9117FBCCF600D2B9BE /* ReadingListViewController.h */,
 				8AEF0F9217FBCCF600D2B9BE /* ReadingListViewController.m */,
 				8AEF0F9317FBCCF600D2B9BE /* ReadingListViewController.xib */,
+				8AEF0F9817FC19C200D2B9BE /* ActivityTrackingViewController.h */,
+				8AEF0F9917FC19C200D2B9BE /* ActivityTrackingViewController.m */,
+				8AEF0F9A17FC19C200D2B9BE /* ActivityTrackingViewController.xib */,
 			);
 			path = SampleViewControllers;
 			sourceTree = "<group>";
@@ -662,6 +674,7 @@
 				8A7BF3AB17ED7F5D004EF216 /* stage_10@2x.png in Resources */,
 				8A6DBC7717F251FB004311FE /* SmileDetectionViewController.xib in Resources */,
 				8A7BF37B17ED5BB1004EF216 /* m31@2x.png in Resources */,
+				8AEF0F9C17FC19C200D2B9BE /* ActivityTrackingViewController.xib in Resources */,
 				8A7BF3A117ED7F5D004EF216 /* m5@2x.png in Resources */,
 				8A7BF38217ED5BB1004EF216 /* m38@2x.png in Resources */,
 				8A7BF37E17ED5BB1004EF216 /* m34@2x.png in Resources */,
@@ -717,6 +730,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AEF0F9B17FC19C200D2B9BE /* ActivityTrackingViewController.m in Sources */,
 				8A43D5E017F187D9005E8BE8 /* SampleScene.m in Sources */,
 				8A7BF1D117ED384C004EF216 /* AppDelegate.m in Sources */,
 				8A7BF39417ED7EF7004EF216 /* MotionEffectViewController.m in Sources */,

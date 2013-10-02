@@ -110,6 +110,13 @@ Generating QR Code with CIQRCodeGenerator.
 ![](http://f.cl.ly/items/3E1q1t1L2n142r2i2I3S/qrcode__.png)
 
 
+###Motion Activity Tracking
+
+Counting steps and monitoring the activity using CMStepCounter and CMMotionActivityManager. It works only on iPhone5s (M7 chip).
+
+![](http://f.cl.ly/items/391o07450F3U443B3i0v/m7_.png)
+
+
 ###Static Map Snapshots
 
 Creating a snapshot with MKMapSnapshotOptions, MKMapSnapshotter.
