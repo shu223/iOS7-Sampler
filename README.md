@@ -123,6 +123,7 @@ Creating a snapshot with MKMapSnapshotOptions, MKMapSnapshotter.
 
 ![](http://f.cl.ly/items/2Q3d472D37002f063716/map_snapshot.png)
 
+
 ###Safari Reading List
 
 Adding an item to the Safari Reading List with the new Safari Services framework.

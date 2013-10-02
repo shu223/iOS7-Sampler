@@ -90,7 +90,7 @@
         self.stepCounter = [[CMStepCounter alloc] init];
     
         [self.stepCounter startStepCountingUpdatesToQueue:self.operationQueue
-                                                 updateOn:3
+                                                 updateOn:1
                                               withHandler:
          ^(NSInteger numberOfSteps, NSDate *timestamp, NSError *error) {
 
@@ -120,8 +120,6 @@
          ^(CMMotionActivity *activity) {
 
              dispatch_async(dispatch_get_main_queue(), ^{
-                 
-                 NSLog(@"activity:%@", activity);
                  
                  NSString *status = [weakSelf statusForActivity:activity];
                  NSString *confidence = [weakSelf stringFromConfidence:activity.confidence];
