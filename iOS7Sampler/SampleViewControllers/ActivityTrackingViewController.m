@@ -102,7 +102,7 @@
                  }
                  else {
 
-                     NSString *text = [NSString stringWithFormat:@"Steps: %ld", numberOfSteps];
+                     NSString *text = [NSString stringWithFormat:@"Steps: %ld", (long)numberOfSteps];
                      
                      weakSelf.stepsLabel.text = text;
                  }
