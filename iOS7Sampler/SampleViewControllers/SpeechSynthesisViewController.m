@@ -42,6 +42,20 @@
 
 
 // =============================================================================
+#pragma mark - Touch Handler
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+
+    if ([self.textField canResignFirstResponder]) {
+        
+        [self.textField resignFirstResponder];
+    }
+    
+    [super touchesBegan: touches withEvent: event];
+}
+
+
+// =============================================================================
 #pragma mark - IBAction
 
 - (IBAction)say {
