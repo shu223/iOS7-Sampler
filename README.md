@@ -129,6 +129,13 @@ Creating a snapshot with MKMapSnapshotOptions, MKMapSnapshotter.
 Adding an item to the Safari Reading List with the new Safari Services framework.
 
 
+###New Fonts
+
+Displaying new fonts with their FontNames which are needed for \"fontWithName:size:\" method of UIFont.
+
+![](http://f.cl.ly/items/2i1P390S0f3K340i0p1G/font2_.png)
+
+
 ##See Also
 
 ###[Open source collection for Flat Design UI](http://d.hatena.ne.jp/shu223/20130617/1371606128)
