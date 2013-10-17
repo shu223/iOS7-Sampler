@@ -121,6 +121,9 @@
 		8AEF0F9B17FC19C200D2B9BE /* ActivityTrackingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AEF0F9917FC19C200D2B9BE /* ActivityTrackingViewController.m */; };
 		8AEF0F9C17FC19C200D2B9BE /* ActivityTrackingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8AEF0F9A17FC19C200D2B9BE /* ActivityTrackingViewController.xib */; };
 		8AEF0F9E17FC1BE200D2B9BE /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AEF0F9D17FC1BE200D2B9BE /* CoreMotion.framework */; };
+		8AEFF73D181007D5004182BD /* addedIn7.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8AEFF73B181007D5004182BD /* addedIn7.plist */; };
+		8AEFF7411810083A004182BD /* FontsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AEFF73F1810083A004182BD /* FontsViewController.m */; };
+		8AEFF7421810083A004182BD /* FontsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8AEFF7401810083A004182BD /* FontsViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -278,6 +281,10 @@
 		8AEF0F9917FC19C200D2B9BE /* ActivityTrackingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityTrackingViewController.m; sourceTree = "<group>"; };
 		8AEF0F9A17FC19C200D2B9BE /* ActivityTrackingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActivityTrackingViewController.xib; sourceTree = "<group>"; };
 		8AEF0F9D17FC1BE200D2B9BE /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		8AEFF73B181007D5004182BD /* addedIn7.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = addedIn7.plist; sourceTree = "<group>"; };
+		8AEFF73E1810083A004182BD /* FontsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FontsViewController.h; sourceTree = "<group>"; };
+		8AEFF73F1810083A004182BD /* FontsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FontsViewController.m; sourceTree = "<group>"; };
+		8AEFF7401810083A004182BD /* FontsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FontsViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -468,6 +475,9 @@
 				8AEF0F9817FC19C200D2B9BE /* ActivityTrackingViewController.h */,
 				8AEF0F9917FC19C200D2B9BE /* ActivityTrackingViewController.m */,
 				8AEF0F9A17FC19C200D2B9BE /* ActivityTrackingViewController.xib */,
+				8AEFF73E1810083A004182BD /* FontsViewController.h */,
+				8AEFF73F1810083A004182BD /* FontsViewController.m */,
+				8AEFF7401810083A004182BD /* FontsViewController.xib */,
 			);
 			path = SampleViewControllers;
 			sourceTree = "<group>";
@@ -475,6 +485,7 @@
 		8A7BF29617ED5392004EF216 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				8AEFF739181007D5004182BD /* plists */,
 				8A7BF29717ED5392004EF216 /* images */,
 			);
 			path = Resources;
@@ -562,6 +573,14 @@
 				8A7BF3BA17ED8B43004EF216 /* HUTransitionVerticalLinesAnimator.m */,
 			);
 			path = HUAnimator;
+			sourceTree = "<group>";
+		};
+		8AEFF739181007D5004182BD /* plists */ = {
+			isa = PBXGroup;
+			children = (
+				8AEFF73B181007D5004182BD /* addedIn7.plist */,
+			);
+			path = plists;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -666,6 +685,7 @@
 				8A6DBC7E17F2C33D004311FE /* QRCodeViewController.xib in Resources */,
 				8A7BF36C17ED5BB1004EF216 /* m16@2x.png in Resources */,
 				8A7BF37617ED5BB1004EF216 /* m26@2x.png in Resources */,
+				8AEFF7421810083A004182BD /* FontsViewController.xib in Resources */,
 				8A7BF37217ED5BB1004EF216 /* m22@2x.png in Resources */,
 				8A7BF36517ED5BB1004EF216 /* m9@2x.png in Resources */,
 				8A7BF38017ED5BB1004EF216 /* m36@2x.png in Resources */,
@@ -675,6 +695,7 @@
 				8A6DBC7717F251FB004311FE /* SmileDetectionViewController.xib in Resources */,
 				8A7BF37B17ED5BB1004EF216 /* m31@2x.png in Resources */,
 				8AEF0F9C17FC19C200D2B9BE /* ActivityTrackingViewController.xib in Resources */,
+				8AEFF73D181007D5004182BD /* addedIn7.plist in Resources */,
 				8A7BF3A117ED7F5D004EF216 /* m5@2x.png in Resources */,
 				8A7BF38217ED5BB1004EF216 /* m38@2x.png in Resources */,
 				8A7BF37E17ED5BB1004EF216 /* m34@2x.png in Resources */,
@@ -749,6 +770,7 @@
 				8A43D5D417F12307005E8BE8 /* ZBFallenBricksAnimator.m in Sources */,
 				8A6DBC7D17F2C33D004311FE /* QRCodeViewController.m in Sources */,
 				8A043B1817F0D34200DA84E9 /* Map3DViewController.m in Sources */,
+				8AEFF7411810083A004182BD /* FontsViewController.m in Sources */,
 				8A7BF3BD17ED8B43004EF216 /* HUTransitionHorizontalLinesAnimator.m in Sources */,
 				8A6DBC7617F251FB004311FE /* SmileDetectionViewController.m in Sources */,
 				8A43D5DC17F187BE005E8BE8 /* SpriteKitViewController.m in Sources */,

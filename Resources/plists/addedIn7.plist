@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<string>Thonburi-Light</string>
+	<string>GeezaPro-Light</string>
+	<string>Menlo-BoldItalic</string>
+	<string>Menlo-Regular</string>
+	<string>Menlo-Bold</string>
+	<string>Menlo-Italic</string>
+	<string>IowanOldStyle-Bold</string>
+	<string>IowanOldStyle-BoldItalic</string>
+	<string>IowanOldStyle-Italic</string>
+	<string>IowanOldStyle-Roman</string>
+	<string>DamascusBold</string>
+	<string>Damascus</string>
+	<string>DamascusMedium</string>
+	<string>DamascusSemiBold</string>
+	<string>AlNile-Bold</string>
+	<string>AlNile</string>
+	<string>Farah</string>
+	<string>DINCondensed-Bold</string>
+	<string>Superclarendon-Regular</string>
+	<string>Superclarendon-BoldItalic</string>
+	<string>Superclarendon-Light</string>
+	<string>Superclarendon-BlackItalic</string>
+	<string>Superclarendon-Italic</string>
+	<string>Superclarendon-LightItalic</string>
+	<string>Superclarendon-Bold</string>
+	<string>Superclarendon-Black</string>
+	<string>DiwanMishafi</string>
+	<string>SavoyeLetPlain</string>
+	<string>AppleSDGothicNeo-Thin</string>
+	<string>AppleSDGothicNeo-SemiBold</string>
+	<string>AppleSDGothicNeo-Regular</string>
+	<string>AppleSDGothicNeo-Light</string>
+	<string>ArialHebrew-Light</string>
+	<string>HelveticaNeue-MediumItalic</string>
+	<string>HelveticaNeue-Thin</string>
+	<string>HelveticaNeue-Thin_Italic</string>
+	<string>DINAlternate-Bold</string>
+</array>
+</plist>

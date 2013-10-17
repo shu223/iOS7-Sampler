@@ -121,6 +121,13 @@
                      kItemKeyDescription: @"Adding an item to the Safari Reading List with the new Safari Services framework.",
                      kItemKeyClassPrefix: @"ReadingList",
                      },
+                   
+                   // New Fonts
+                   @{kItemKeyTitle: @"New Fonts",
+                     kItemKeyDescription: @"Displaying new fonts with their FontNames which are needed for \"fontWithName:size:\" method of UIFont.",
+                     kItemKeyClassPrefix: @"Fonts",
+                     },
+
                    ];
 }
 
