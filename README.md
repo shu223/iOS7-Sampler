@@ -40,6 +40,13 @@ UIViewControllerAnimatedTransitioning, UIViewControllerTransitioningDelegate.
 
 ![](http://f.cl.ly/items/0R2T2a2s1A3s1G2n3I25/3DMap_.png)
 
+###iBeacon
+
+Region monitoring demo using iBeacon.
+
+![](http://f.cl.ly/items/220D2F210D1x1D0L1Q20/beacon__.gif)
+
+
 
 ###Smile Detection
 

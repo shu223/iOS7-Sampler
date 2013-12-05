@@ -56,6 +56,12 @@
                      kItemKeyClassPrefix: @"Map3D",
                      },
                    
+                   // iBeacon (monitoring)
+                   @{kItemKeyTitle: @"iBeacon",
+                     kItemKeyDescription: @"Region monitoring demo using iBeacon.",
+                     kItemKeyClassPrefix: @"Beacon",
+                     },
+
                    // Smile Detection
                    @{kItemKeyTitle: @"Smile Detection",
                      kItemKeyDescription: @"Smile Detection using CIDetectorSmile and new properties of CIFeature such as \"bounds\".",
@@ -91,7 +97,7 @@
                      kItemKeyDescription: @"Creating a local network sharing connection over Wi-Fi or Bluetooth LE.",
                      kItemKeyClassPrefix: @"MultipeerConnectivity",
                      },
-                   
+
                    // Added Activity Types
                    @{kItemKeyTitle: @"AirDrop/Flickr/Vimeo/ReadingList",
                      kItemKeyDescription: @"New Activity Types: AirDrop, Post to Flickr / Vimeo, Add to ReadingList",
@@ -127,7 +133,6 @@
                      kItemKeyDescription: @"Displaying new fonts with their FontNames which are needed for \"fontWithName:size:\" method of UIFont.",
                      kItemKeyClassPrefix: @"Fonts",
                      },
-
                    ];
 }
 

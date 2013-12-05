@@ -115,6 +115,11 @@
 		8A7BF3BC17ED8B43004EF216 /* HUTransitionGhostAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A7BF3B617ED8B43004EF216 /* HUTransitionGhostAnimator.m */; };
 		8A7BF3BD17ED8B43004EF216 /* HUTransitionHorizontalLinesAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A7BF3B817ED8B43004EF216 /* HUTransitionHorizontalLinesAnimator.m */; };
 		8A7BF3BE17ED8B43004EF216 /* HUTransitionVerticalLinesAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A7BF3BA17ED8B43004EF216 /* HUTransitionVerticalLinesAnimator.m */; };
+		8AC907501850931C00A74F2E /* BeaconViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AC9074E1850931C00A74F2E /* BeaconViewController.m */; };
+		8AC907511850931C00A74F2E /* BeaconViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8AC9074F1850931C00A74F2E /* BeaconViewController.xib */; };
+		8AC907551850A66000A74F2E /* PulsingHaloLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AC907541850A66000A74F2E /* PulsingHaloLayer.m */; };
+		8AC907571850AB8000A74F2E /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AC907561850AB8000A74F2E /* CoreBluetooth.framework */; };
+		8AC907591850B2F600A74F2E /* IPhone_5s@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AC907581850B2F600A74F2E /* IPhone_5s@2x.png */; };
 		8AEF0F9417FBCCF600D2B9BE /* ReadingListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AEF0F9217FBCCF600D2B9BE /* ReadingListViewController.m */; };
 		8AEF0F9517FBCCF600D2B9BE /* ReadingListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8AEF0F9317FBCCF600D2B9BE /* ReadingListViewController.xib */; };
 		8AEF0F9717FBCDDB00D2B9BE /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AEF0F9617FBCDDB00D2B9BE /* SafariServices.framework */; };
@@ -273,6 +278,13 @@
 		8A7BF3B817ED8B43004EF216 /* HUTransitionHorizontalLinesAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HUTransitionHorizontalLinesAnimator.m; sourceTree = "<group>"; };
 		8A7BF3B917ED8B43004EF216 /* HUTransitionVerticalLinesAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HUTransitionVerticalLinesAnimator.h; sourceTree = "<group>"; };
 		8A7BF3BA17ED8B43004EF216 /* HUTransitionVerticalLinesAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HUTransitionVerticalLinesAnimator.m; sourceTree = "<group>"; };
+		8AC9074D1850931C00A74F2E /* BeaconViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeaconViewController.h; sourceTree = "<group>"; };
+		8AC9074E1850931C00A74F2E /* BeaconViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeaconViewController.m; sourceTree = "<group>"; };
+		8AC9074F1850931C00A74F2E /* BeaconViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BeaconViewController.xib; sourceTree = "<group>"; };
+		8AC907531850A66000A74F2E /* PulsingHaloLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PulsingHaloLayer.h; sourceTree = "<group>"; };
+		8AC907541850A66000A74F2E /* PulsingHaloLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PulsingHaloLayer.m; sourceTree = "<group>"; };
+		8AC907561850AB8000A74F2E /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		8AC907581850B2F600A74F2E /* IPhone_5s@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "IPhone_5s@2x.png"; sourceTree = "<group>"; };
 		8AEF0F9117FBCCF600D2B9BE /* ReadingListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadingListViewController.h; sourceTree = "<group>"; };
 		8AEF0F9217FBCCF600D2B9BE /* ReadingListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadingListViewController.m; sourceTree = "<group>"; };
 		8AEF0F9317FBCCF600D2B9BE /* ReadingListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReadingListViewController.xib; sourceTree = "<group>"; };
@@ -292,6 +304,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AC907571850AB8000A74F2E /* CoreBluetooth.framework in Frameworks */,
 				8AEF0F9E17FC1BE200D2B9BE /* CoreMotion.framework in Frameworks */,
 				8AEF0F9717FBCDDB00D2B9BE /* SafariServices.framework in Frameworks */,
 				8A6DBC8017F2C352004311FE /* CoreImage.framework in Frameworks */,
@@ -362,6 +375,7 @@
 		8A7BF1BF17ED384C004EF216 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8AC907561850AB8000A74F2E /* CoreBluetooth.framework */,
 				8AEF0F9D17FC1BE200D2B9BE /* CoreMotion.framework */,
 				8AEF0F9617FBCDDB00D2B9BE /* SafariServices.framework */,
 				8A6DBC7F17F2C352004311FE /* CoreImage.framework */,
@@ -478,6 +492,9 @@
 				8AEFF73E1810083A004182BD /* FontsViewController.h */,
 				8AEFF73F1810083A004182BD /* FontsViewController.m */,
 				8AEFF7401810083A004182BD /* FontsViewController.xib */,
+				8AC9074D1850931C00A74F2E /* BeaconViewController.h */,
+				8AC9074E1850931C00A74F2E /* BeaconViewController.m */,
+				8AC9074F1850931C00A74F2E /* BeaconViewController.xib */,
 			);
 			path = SampleViewControllers;
 			sourceTree = "<group>";
@@ -494,6 +511,7 @@
 		8A7BF29717ED5392004EF216 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				8AC907581850B2F600A74F2E /* IPhone_5s@2x.png */,
 				8A6DBC8617F2CE32004311FE /* sample.jpg */,
 				8A6DBC7817F252FC004311FE /* face_detection.jpg */,
 				8A7BF39717ED7F5D004EF216 /* stage_1@2x.png */,
@@ -553,6 +571,7 @@
 		8A7BF3B117ED8B43004EF216 /* vendor */ = {
 			isa = PBXGroup;
 			children = (
+				8AC907521850A66000A74F2E /* PulsingHalo */,
 				8A43D5B917F12307005E8BE8 /* ZBCustomTransitions */,
 				8A43D5B317F11E72005E8BE8 /* SVProgressHUD */,
 				8A7BF3B217ED8B43004EF216 /* HUAnimator */,
@@ -573,6 +592,15 @@
 				8A7BF3BA17ED8B43004EF216 /* HUTransitionVerticalLinesAnimator.m */,
 			);
 			path = HUAnimator;
+			sourceTree = "<group>";
+		};
+		8AC907521850A66000A74F2E /* PulsingHalo */ = {
+			isa = PBXGroup;
+			children = (
+				8AC907531850A66000A74F2E /* PulsingHaloLayer.h */,
+				8AC907541850A66000A74F2E /* PulsingHaloLayer.m */,
+			);
+			path = PulsingHalo;
 			sourceTree = "<group>";
 		};
 		8AEFF739181007D5004182BD /* plists */ = {
@@ -702,8 +730,10 @@
 				8A7BF38317ED5BB1004EF216 /* m39@2x.png in Resources */,
 				8A7BF3B017ED8A9E004EF216 /* CustomTransitionViewController.xib in Resources */,
 				8A7BF37A17ED5BB1004EF216 /* m30@2x.png in Resources */,
+				8AC907591850B2F600A74F2E /* IPhone_5s@2x.png in Resources */,
 				8A7BF36817ED5BB1004EF216 /* m12@2x.png in Resources */,
 				8A7BF1DC17ED384C004EF216 /* Images.xcassets in Resources */,
+				8AC907511850931C00A74F2E /* BeaconViewController.xib in Resources */,
 				8A7BF3A317ED7F5D004EF216 /* stage_2@2x.png in Resources */,
 				8A7BF38917ED6882004EF216 /* ActivityTypesViewController.xib in Resources */,
 				8A7BF38117ED5BB1004EF216 /* m37@2x.png in Resources */,
@@ -752,6 +782,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8AEF0F9B17FC19C200D2B9BE /* ActivityTrackingViewController.m in Sources */,
+				8AC907551850A66000A74F2E /* PulsingHaloLayer.m in Sources */,
 				8A43D5E017F187D9005E8BE8 /* SampleScene.m in Sources */,
 				8A7BF1D117ED384C004EF216 /* AppDelegate.m in Sources */,
 				8A7BF39417ED7EF7004EF216 /* MotionEffectViewController.m in Sources */,
@@ -767,6 +798,7 @@
 				8A7BF29217ED4C9F004EF216 /* DynamicBehaviorsViewController.m in Sources */,
 				8A43D5B817F11E72005E8BE8 /* SVProgressHUD.m in Sources */,
 				8A6DBC6C17F193FB004311FE /* MapOverlaysViewController.m in Sources */,
+				8AC907501850931C00A74F2E /* BeaconViewController.m in Sources */,
 				8A43D5D417F12307005E8BE8 /* ZBFallenBricksAnimator.m in Sources */,
 				8A6DBC7D17F2C33D004311FE /* QRCodeViewController.m in Sources */,
 				8A043B1817F0D34200DA84E9 /* Map3DViewController.m in Sources */,
