@@ -119,6 +119,9 @@
 		8AC907551850A66000A74F2E /* PulsingHaloLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AC907541850A66000A74F2E /* PulsingHaloLayer.m */; };
 		8AC907571850AB8000A74F2E /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AC907561850AB8000A74F2E /* CoreBluetooth.framework */; };
 		8AC907591850B2F600A74F2E /* IPhone_5s@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AC907581850B2F600A74F2E /* IPhone_5s@2x.png */; };
+		8ACDEF3E1878F61D00BC94F6 /* AVCaptureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ACDEF3D1878F61D00BC94F6 /* AVCaptureManager.m */; };
+		8ACDEF421878F68D00BC94F6 /* SloMoVideoRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ACDEF401878F68D00BC94F6 /* SloMoVideoRecordViewController.m */; };
+		8ACDEF431878F68D00BC94F6 /* SloMoVideoRecordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8ACDEF411878F68D00BC94F6 /* SloMoVideoRecordViewController.xib */; };
 		8AEF0F9417FBCCF600D2B9BE /* ReadingListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AEF0F9217FBCCF600D2B9BE /* ReadingListViewController.m */; };
 		8AEF0F9517FBCCF600D2B9BE /* ReadingListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8AEF0F9317FBCCF600D2B9BE /* ReadingListViewController.xib */; };
 		8AEF0F9717FBCDDB00D2B9BE /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AEF0F9617FBCDDB00D2B9BE /* SafariServices.framework */; };
@@ -282,6 +285,11 @@
 		8AC907541850A66000A74F2E /* PulsingHaloLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PulsingHaloLayer.m; sourceTree = "<group>"; };
 		8AC907561850AB8000A74F2E /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		8AC907581850B2F600A74F2E /* IPhone_5s@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "IPhone_5s@2x.png"; sourceTree = "<group>"; };
+		8ACDEF3C1878F61D00BC94F6 /* AVCaptureManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVCaptureManager.h; sourceTree = "<group>"; };
+		8ACDEF3D1878F61D00BC94F6 /* AVCaptureManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVCaptureManager.m; sourceTree = "<group>"; };
+		8ACDEF3F1878F68D00BC94F6 /* SloMoVideoRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SloMoVideoRecordViewController.h; sourceTree = "<group>"; };
+		8ACDEF401878F68D00BC94F6 /* SloMoVideoRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SloMoVideoRecordViewController.m; sourceTree = "<group>"; };
+		8ACDEF411878F68D00BC94F6 /* SloMoVideoRecordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SloMoVideoRecordViewController.xib; sourceTree = "<group>"; };
 		8AEF0F9117FBCCF600D2B9BE /* ReadingListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadingListViewController.h; sourceTree = "<group>"; };
 		8AEF0F9217FBCCF600D2B9BE /* ReadingListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadingListViewController.m; sourceTree = "<group>"; };
 		8AEF0F9317FBCCF600D2B9BE /* ReadingListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReadingListViewController.xib; sourceTree = "<group>"; };
@@ -490,6 +498,9 @@
 				8AC9074D1850931C00A74F2E /* BeaconViewController.h */,
 				8AC9074E1850931C00A74F2E /* BeaconViewController.m */,
 				8AC9074F1850931C00A74F2E /* BeaconViewController.xib */,
+				8ACDEF3F1878F68D00BC94F6 /* SloMoVideoRecordViewController.h */,
+				8ACDEF401878F68D00BC94F6 /* SloMoVideoRecordViewController.m */,
+				8ACDEF411878F68D00BC94F6 /* SloMoVideoRecordViewController.xib */,
 			);
 			path = SampleViewControllers;
 			sourceTree = "<group>";
@@ -566,6 +577,7 @@
 		8A7BF3B117ED8B43004EF216 /* vendor */ = {
 			isa = PBXGroup;
 			children = (
+				8ACDEF3B1878F61D00BC94F6 /* AVCaptureManager */,
 				8AC907521850A66000A74F2E /* PulsingHalo */,
 				8A43D5B917F12307005E8BE8 /* ZBCustomTransitions */,
 				8A43D5B317F11E72005E8BE8 /* SVProgressHUD */,
@@ -596,6 +608,15 @@
 				8AC907541850A66000A74F2E /* PulsingHaloLayer.m */,
 			);
 			path = PulsingHalo;
+			sourceTree = "<group>";
+		};
+		8ACDEF3B1878F61D00BC94F6 /* AVCaptureManager */ = {
+			isa = PBXGroup;
+			children = (
+				8ACDEF3C1878F61D00BC94F6 /* AVCaptureManager.h */,
+				8ACDEF3D1878F61D00BC94F6 /* AVCaptureManager.m */,
+			);
+			path = AVCaptureManager;
 			sourceTree = "<group>";
 		};
 		8AEFF739181007D5004182BD /* plists */ = {
@@ -697,6 +718,7 @@
 				8A43D5B717F11E72005E8BE8 /* SVProgressHUD.bundle in Resources */,
 				8A7BF35E17ED5BB1004EF216 /* m1@2x.png in Resources */,
 				8A7BF35F17ED5BB1004EF216 /* m2@2x.png in Resources */,
+				8ACDEF431878F68D00BC94F6 /* SloMoVideoRecordViewController.xib in Resources */,
 				8A7BF37517ED5BB1004EF216 /* m25@2x.png in Resources */,
 				8A7BF3A517ED7F5D004EF216 /* stage_4@2x.png in Resources */,
 				8A7BF39517ED7EF7004EF216 /* MotionEffectViewController.xib in Resources */,
@@ -786,6 +808,8 @@
 				8A7BF3BB17ED8B43004EF216 /* HUTransitionAnimator.m in Sources */,
 				8A6DBC7117F19718004311FE /* MapDirectionsViewController.m in Sources */,
 				8A6DBC8417F2CDC0004311FE /* ImageFiltersViewController.m in Sources */,
+				8ACDEF3E1878F61D00BC94F6 /* AVCaptureManager.m in Sources */,
+				8ACDEF421878F68D00BC94F6 /* SloMoVideoRecordViewController.m in Sources */,
 				8A7BF38817ED6882004EF216 /* ActivityTypesViewController.m in Sources */,
 				8A7BF3AF17ED8A9E004EF216 /* CustomTransitionViewController.m in Sources */,
 				8A7BF1D717ED384C004EF216 /* MasterViewController.m in Sources */,

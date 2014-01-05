@@ -61,6 +61,12 @@
                      kItemKeyClassPrefix: @"Beacon",
                      },
 
+                   // 120fps Video Recording
+                   @{kItemKeyTitle: @"120 fps SLO-MO video recording",
+                     kItemKeyDescription: @"SLO-MO video recorder using AVFoundation. It works with 120fps on iPhone5s.",
+                     kItemKeyClassPrefix: @"SloMoVideoRecord",
+                     },
+                   
                    // Smile Detection
                    @{kItemKeyTitle: @"Smile Detection",
                      kItemKeyDescription: @"Smile Detection using CIDetectorSmile and new properties of CIFeature such as \"bounds\".",
@@ -114,7 +120,7 @@
                      kItemKeyDescription: @"Counting steps and monitoring the activity using CMStepCounter and CMMotionActivityManager. It works only on iPhone5s (M7 chip).",
                      kItemKeyClassPrefix: @"ActivityTracking",
                      },
-                   
+
                    // Static Map Snapshots
                    @{kItemKeyTitle: @"Static Map Snapshots",
                      kItemKeyDescription: @"Creating a snapshot with MKMapSnapshotOptions, MKMapSnapshotter.",

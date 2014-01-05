@@ -46,6 +46,22 @@ Region monitoring demo using iBeacon.
 
 ![](http://f.cl.ly/items/220D2F210D1x1D0L1Q20/beacon__.gif)
 
+Related Repository: [PulsingHalo](https://github.com/shu223/PulsingHalo)
+
+
+###120fps Video Recording
+
+SLO-MO video recorder using AVFoundation. It works with 120fps on iPhone5s.
+
+![](http://f.cl.ly/items/360a271y1G3Q2C2a3p2d/IMG_8907_r1_c1.jpg)
+
+Example:
+
+![](http://f.cl.ly/items/1b3Q0h0k3k2m261s3R3n/samplemovie__.gif)
+
+<p><a href="http://vimeo.com/82064431">See the 120fps Slo-Mo video in Vimeo 120fps.</a></p>
+
+Related Repository: [SlowMotionVideoRecorder](https://github.com/shu223/SlowMotionVideoRecorder)
 
 
 ###Smile Detection
