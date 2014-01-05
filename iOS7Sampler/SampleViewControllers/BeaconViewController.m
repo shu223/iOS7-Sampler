@@ -91,6 +91,16 @@
     }
 }
 
+- (void)startRangingInRegion:(CLRegion *)region {
+
+    if ([region isMemberOfClass:[CLBeaconRegion class]] && [CLLocationManager isRangingAvailable]) {
+
+        self.statusLabel.text = @"Beacon in range:";
+
+        [self.locationManager startRangingBeaconsInRegion:self.beaconRegion];
+    }
+}
+
 
 // =============================================================================
 #pragma mark - CLLocationManagerDelegate
@@ -118,11 +128,7 @@
     switch (state) {
         case CLRegionStateInside:
         {
-            // start ranging
-            if ([region isMemberOfClass:[CLBeaconRegion class]] && [CLLocationManager isRangingAvailable]) {
-                
-                [self.locationManager startRangingBeaconsInRegion:self.beaconRegion];
-            }
+            [self startRangingInRegion:region];
             break;
         }
         case CLRegionStateOutside:
@@ -135,12 +141,7 @@
 - (void)locationManager:(CLLocationManager *)manager
          didEnterRegion:(CLRegion *)region
 {
-    self.statusLabel.text = @"Beacon in range:";
-
-    if ([region isMemberOfClass:[CLBeaconRegion class]] && [CLLocationManager isRangingAvailable])
-    {
-        [self.locationManager startRangingBeaconsInRegion:(CLBeaconRegion *)region];
-    }
+    [self startRangingInRegion:region];
 }
 
 - (void)locationManager:(CLLocationManager *)manager
