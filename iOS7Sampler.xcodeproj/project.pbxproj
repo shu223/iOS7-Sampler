@@ -43,7 +43,6 @@
 		8A7BF1D117ED384C004EF216 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A7BF1D017ED384C004EF216 /* AppDelegate.m */; };
 		8A7BF1D417ED384C004EF216 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A7BF1D217ED384C004EF216 /* Main.storyboard */; };
 		8A7BF1D717ED384C004EF216 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A7BF1D617ED384C004EF216 /* MasterViewController.m */; };
-		8A7BF1DA17ED384C004EF216 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A7BF1D917ED384C004EF216 /* DetailViewController.m */; };
 		8A7BF1DC17ED384C004EF216 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A7BF1DB17ED384C004EF216 /* Images.xcassets */; };
 		8A7BF1E317ED384C004EF216 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A7BF1E217ED384C004EF216 /* XCTest.framework */; };
 		8A7BF1E417ED384C004EF216 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A7BF1C017ED384C004EF216 /* Foundation.framework */; };
@@ -196,8 +195,6 @@
 		8A7BF1D317ED384C004EF216 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8A7BF1D517ED384C004EF216 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
 		8A7BF1D617ED384C004EF216 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
-		8A7BF1D817ED384C004EF216 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
-		8A7BF1D917ED384C004EF216 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		8A7BF1DB17ED384C004EF216 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		8A7BF1E117ED384C004EF216 /* iOS7SamplerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOS7SamplerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A7BF1E217ED384C004EF216 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -399,8 +396,6 @@
 				8A7BF1D517ED384C004EF216 /* MasterViewController.h */,
 				8A7BF1D617ED384C004EF216 /* MasterViewController.m */,
 				8A7BF1D217ED384C004EF216 /* Main.storyboard */,
-				8A7BF1D817ED384C004EF216 /* DetailViewController.h */,
-				8A7BF1D917ED384C004EF216 /* DetailViewController.m */,
 				8A7BF1DB17ED384C004EF216 /* Images.xcassets */,
 				8A7BF1C717ED384C004EF216 /* Supporting Files */,
 			);
@@ -810,7 +805,6 @@
 				8A7BF38D17ED7897004EF216 /* SpeechSynthesisViewController.m in Sources */,
 				8AEF0F9417FBCCF600D2B9BE /* ReadingListViewController.m in Sources */,
 				8A43D5D817F12397005E8BE8 /* UIViewController+Animator.m in Sources */,
-				8A7BF1DA17ED384C004EF216 /* DetailViewController.m in Sources */,
 				8A7BF3BE17ED8B43004EF216 /* HUTransitionVerticalLinesAnimator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

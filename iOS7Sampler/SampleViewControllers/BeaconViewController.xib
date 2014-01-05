@@ -63,9 +63,13 @@
                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7I5-kk-vne">
-                    <rect key="frame" x="30" y="269" width="250" height="30"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7I5-kk-vne">
+                    <rect key="frame" x="35" y="269" width="250" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="JpX-9B-c6t"/>
+                        <constraint firstAttribute="width" constant="250" id="uDt-UT-e5C"/>
+                    </constraints>
                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                     <state key="normal" title="Turn this device into a Beacon">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -74,15 +78,19 @@
                         <action selector="pressTurnIntoBeacon" destination="-1" eventType="touchUpInside" id="9f2-lQ-OIR"/>
                     </connections>
                 </button>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="2uR-0B-U69">
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="2uR-0B-U69">
                     <rect key="frame" x="20" y="474" width="280" height="74"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="280" id="Cxf-lr-QLW"/>
+                        <constraint firstAttribute="height" constant="74" id="djw-VO-KFu"/>
+                    </constraints>
                     <string key="text">There are two roles in iBeacon: beacons (peripheral) and the observer (central). This demo requires at least two devices taking each role.</string>
                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q32-vp-bzC">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q32-vp-bzC">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
@@ -114,6 +122,14 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstAttribute="bottom" secondItem="q32-vp-bzC" secondAttribute="bottom" id="2V3-6s-lzE"/>
+                <constraint firstAttribute="centerX" secondItem="7I5-kk-vne" secondAttribute="centerX" id="3b7-XJ-hre"/>
+                <constraint firstItem="q32-vp-bzC" firstAttribute="centerY" secondItem="7I5-kk-vne" secondAttribute="centerY" id="8vO-d6-Ws0"/>
+                <constraint firstAttribute="centerX" secondItem="2uR-0B-U69" secondAttribute="centerX" id="WA3-aP-pSc"/>
+                <constraint firstItem="q32-vp-bzC" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="gli-ki-6q5"/>
+                <constraint firstItem="2uR-0B-U69" firstAttribute="centerX" secondItem="q32-vp-bzC" secondAttribute="centerX" id="lvA-JZ-Nle"/>
+                <constraint firstAttribute="centerY" secondItem="7I5-kk-vne" secondAttribute="centerY" id="mHH-NM-aKh"/>
+                <constraint firstItem="q32-vp-bzC" firstAttribute="top" secondItem="1" secondAttribute="top" id="rQG-Rs-Ppi"/>
                 <constraint firstAttribute="bottom" secondItem="2uR-0B-U69" secondAttribute="bottom" constant="20" id="tB8-SR-EHh"/>
             </constraints>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
