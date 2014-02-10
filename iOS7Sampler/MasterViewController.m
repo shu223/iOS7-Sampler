@@ -144,6 +144,12 @@
                      kItemKeyDescription: @"Performs animations using a timing curve described by the motion of a spring.",
                      kItemKeyClassPrefix: @"SpringAnimation",
                      },
+
+                   // Web Pagination
+                   @{kItemKeyTitle: @"Web Pagination",
+                     kItemKeyDescription: @"Pagination sample for web pages. It uses new property \"paginationMode\" of UIWebView.",
+                     kItemKeyClassPrefix: @"WebPagination",
+                     },
                    ];
 }
 

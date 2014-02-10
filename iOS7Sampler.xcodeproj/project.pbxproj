@@ -116,6 +116,8 @@
 		8A7BF3BE17ED8B43004EF216 /* HUTransitionVerticalLinesAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A7BF3BA17ED8B43004EF216 /* HUTransitionVerticalLinesAnimator.m */; };
 		8A9C30FC18A8BCAE0060F45C /* SpringAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A9C30FA18A8BCAE0060F45C /* SpringAnimationViewController.m */; };
 		8A9C30FD18A8BCAE0060F45C /* SpringAnimationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A9C30FB18A8BCAE0060F45C /* SpringAnimationViewController.xib */; };
+		8A9C310118A8C8FA0060F45C /* WebPaginationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A9C30FF18A8C8FA0060F45C /* WebPaginationViewController.m */; };
+		8A9C310218A8C8FA0060F45C /* WebPaginationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A9C310018A8C8FA0060F45C /* WebPaginationViewController.xib */; };
 		8AC907501850931C00A74F2E /* BeaconViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AC9074E1850931C00A74F2E /* BeaconViewController.m */; };
 		8AC907511850931C00A74F2E /* BeaconViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8AC9074F1850931C00A74F2E /* BeaconViewController.xib */; };
 		8AC907551850A66000A74F2E /* PulsingHaloLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AC907541850A66000A74F2E /* PulsingHaloLayer.m */; };
@@ -283,6 +285,9 @@
 		8A9C30F918A8BCAE0060F45C /* SpringAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpringAnimationViewController.h; sourceTree = "<group>"; };
 		8A9C30FA18A8BCAE0060F45C /* SpringAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpringAnimationViewController.m; sourceTree = "<group>"; };
 		8A9C30FB18A8BCAE0060F45C /* SpringAnimationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SpringAnimationViewController.xib; sourceTree = "<group>"; };
+		8A9C30FE18A8C8FA0060F45C /* WebPaginationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebPaginationViewController.h; sourceTree = "<group>"; };
+		8A9C30FF18A8C8FA0060F45C /* WebPaginationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebPaginationViewController.m; sourceTree = "<group>"; };
+		8A9C310018A8C8FA0060F45C /* WebPaginationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebPaginationViewController.xib; sourceTree = "<group>"; };
 		8AC9074D1850931C00A74F2E /* BeaconViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeaconViewController.h; sourceTree = "<group>"; };
 		8AC9074E1850931C00A74F2E /* BeaconViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeaconViewController.m; sourceTree = "<group>"; };
 		8AC9074F1850931C00A74F2E /* BeaconViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BeaconViewController.xib; sourceTree = "<group>"; };
@@ -509,6 +514,9 @@
 				8A9C30F918A8BCAE0060F45C /* SpringAnimationViewController.h */,
 				8A9C30FA18A8BCAE0060F45C /* SpringAnimationViewController.m */,
 				8A9C30FB18A8BCAE0060F45C /* SpringAnimationViewController.xib */,
+				8A9C30FE18A8C8FA0060F45C /* WebPaginationViewController.h */,
+				8A9C30FF18A8C8FA0060F45C /* WebPaginationViewController.m */,
+				8A9C310018A8C8FA0060F45C /* WebPaginationViewController.xib */,
 			);
 			path = SampleViewControllers;
 			sourceTree = "<group>";
@@ -740,6 +748,7 @@
 				8A7BF36C17ED5BB1004EF216 /* m16@2x.png in Resources */,
 				8A7BF37617ED5BB1004EF216 /* m26@2x.png in Resources */,
 				8AEFF7421810083A004182BD /* FontsViewController.xib in Resources */,
+				8A9C310218A8C8FA0060F45C /* WebPaginationViewController.xib in Resources */,
 				8A7BF37217ED5BB1004EF216 /* m22@2x.png in Resources */,
 				8A7BF36517ED5BB1004EF216 /* m9@2x.png in Resources */,
 				8A7BF38017ED5BB1004EF216 /* m36@2x.png in Resources */,
@@ -814,6 +823,7 @@
 				8A7BF1D117ED384C004EF216 /* AppDelegate.m in Sources */,
 				8A7BF39417ED7EF7004EF216 /* MotionEffectViewController.m in Sources */,
 				7AB9989117F5D776003E769F /* MultipeerConnectivityViewController.m in Sources */,
+				8A9C310118A8C8FA0060F45C /* WebPaginationViewController.m in Sources */,
 				8A43D5B117F11BCA005E8BE8 /* MapSnapshotViewController.m in Sources */,
 				8A7BF3BB17ED8B43004EF216 /* HUTransitionAnimator.m in Sources */,
 				8A6DBC7117F19718004311FE /* MapDirectionsViewController.m in Sources */,

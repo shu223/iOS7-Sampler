@@ -166,6 +166,13 @@ Performs animations using a timing curve described by the motion of a spring.
 ![](http://f.cl.ly/items/1S1n3w0M132q3m42430B/springanimation_r1_c1.jpg)
 
 
+###Web Pagination
+
+Pagination sample for web pages. It uses new property "paginationMode" of UIWebView.
+
+![](http://f.cl.ly/items/2q2F0L2o2G3H2F0k0l1E/IMG_9221_r1_c1.jpg)
+
+
 ##See Also
 
 ###[Open source collection for Flat Design UI](http://d.hatena.ne.jp/shu223/20130617/1371606128)
