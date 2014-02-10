@@ -138,6 +138,12 @@
                      kItemKeyDescription: @"Displaying new fonts with their FontNames which are needed for \"fontWithName:size:\" method of UIFont.",
                      kItemKeyClassPrefix: @"Fonts",
                      },
+                   
+                   // Spring Animation
+                   @{kItemKeyTitle: @"Spring Animation",
+                     kItemKeyDescription: @"Performs animations using a timing curve described by the motion of a spring.",
+                     kItemKeyClassPrefix: @"SpringAnimation",
+                     },
                    ];
 }
 
