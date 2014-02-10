@@ -159,6 +159,13 @@ Displaying new fonts with their FontNames which are needed for \"fontWithName:si
 ![](http://f.cl.ly/items/2i1P390S0f3K340i0p1G/font2_.png)
 
 
+###Spring Animation
+
+Performs animations using a timing curve described by the motion of a spring.
+
+![](http://f.cl.ly/items/1S1n3w0M132q3m42430B/springanimation_r1_c1.jpg)
+
+
 ##See Also
 
 ###[Open source collection for Flat Design UI](http://d.hatena.ne.jp/shu223/20130617/1371606128)
