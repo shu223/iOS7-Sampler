@@ -173,6 +173,11 @@ Pagination sample for web pages. It uses new property "paginationMode" of UIWebV
 ![](http://f.cl.ly/items/2q2F0L2o2G3H2F0k0l1E/IMG_9221_r1_c1.jpg)
 
 
+##Special Thanks
+
+Icons and LaunchImages for iOS7-Sampler are designed by [kateru](https://crowdworks.jp/public/employees/24534)
+
+
 ##See Also
 
 ###[Open source collection for Flat Design UI](http://d.hatena.ne.jp/shu223/20130617/1371606128)
