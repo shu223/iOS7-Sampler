@@ -118,6 +118,8 @@
 		8A9C30FD18A8BCAE0060F45C /* SpringAnimationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A9C30FB18A8BCAE0060F45C /* SpringAnimationViewController.xib */; };
 		8A9C310118A8C8FA0060F45C /* WebPaginationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A9C30FF18A8C8FA0060F45C /* WebPaginationViewController.m */; };
 		8A9C310218A8C8FA0060F45C /* WebPaginationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A9C310018A8C8FA0060F45C /* WebPaginationViewController.xib */; };
+		8A9C32E718A919B50060F45C /* BrowseCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A9C32E518A919B50060F45C /* BrowseCodeViewController.m */; };
+		8A9C32E818A919B50060F45C /* BrowseCodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A9C32E618A919B50060F45C /* BrowseCodeViewController.xib */; };
 		8AC907501850931C00A74F2E /* BeaconViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AC9074E1850931C00A74F2E /* BeaconViewController.m */; };
 		8AC907511850931C00A74F2E /* BeaconViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8AC9074F1850931C00A74F2E /* BeaconViewController.xib */; };
 		8AC907551850A66000A74F2E /* PulsingHaloLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AC907541850A66000A74F2E /* PulsingHaloLayer.m */; };
@@ -288,6 +290,9 @@
 		8A9C30FE18A8C8FA0060F45C /* WebPaginationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebPaginationViewController.h; sourceTree = "<group>"; };
 		8A9C30FF18A8C8FA0060F45C /* WebPaginationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebPaginationViewController.m; sourceTree = "<group>"; };
 		8A9C310018A8C8FA0060F45C /* WebPaginationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebPaginationViewController.xib; sourceTree = "<group>"; };
+		8A9C32E418A919B50060F45C /* BrowseCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrowseCodeViewController.h; sourceTree = "<group>"; };
+		8A9C32E518A919B50060F45C /* BrowseCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrowseCodeViewController.m; sourceTree = "<group>"; };
+		8A9C32E618A919B50060F45C /* BrowseCodeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BrowseCodeViewController.xib; sourceTree = "<group>"; };
 		8AC9074D1850931C00A74F2E /* BeaconViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeaconViewController.h; sourceTree = "<group>"; };
 		8AC9074E1850931C00A74F2E /* BeaconViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeaconViewController.m; sourceTree = "<group>"; };
 		8AC9074F1850931C00A74F2E /* BeaconViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BeaconViewController.xib; sourceTree = "<group>"; };
@@ -416,6 +421,9 @@
 				8A7BF1D217ED384C004EF216 /* Main.storyboard */,
 				8A7BF1DB17ED384C004EF216 /* Images.xcassets */,
 				8A7BF1C717ED384C004EF216 /* Supporting Files */,
+				8A9C32E418A919B50060F45C /* BrowseCodeViewController.h */,
+				8A9C32E518A919B50060F45C /* BrowseCodeViewController.m */,
+				8A9C32E618A919B50060F45C /* BrowseCodeViewController.xib */,
 			);
 			path = iOS7Sampler;
 			sourceTree = "<group>";
@@ -760,6 +768,7 @@
 				8AEF0F9C17FC19C200D2B9BE /* ActivityTrackingViewController.xib in Resources */,
 				8AEFF73D181007D5004182BD /* addedIn7.plist in Resources */,
 				8A7BF3A117ED7F5D004EF216 /* m5@2x.png in Resources */,
+				8A9C32E818A919B50060F45C /* BrowseCodeViewController.xib in Resources */,
 				8A7BF38217ED5BB1004EF216 /* m38@2x.png in Resources */,
 				8A7BF37E17ED5BB1004EF216 /* m34@2x.png in Resources */,
 				8A7BF38317ED5BB1004EF216 /* m39@2x.png in Resources */,
@@ -841,6 +850,7 @@
 				8A43D5D417F12307005E8BE8 /* ZBFallenBricksAnimator.m in Sources */,
 				8A6DBC7D17F2C33D004311FE /* QRCodeViewController.m in Sources */,
 				8A043B1817F0D34200DA84E9 /* Map3DViewController.m in Sources */,
+				8A9C32E718A919B50060F45C /* BrowseCodeViewController.m in Sources */,
 				8AEFF7411810083A004182BD /* FontsViewController.m in Sources */,
 				8A7BF3BD17ED8B43004EF216 /* HUTransitionHorizontalLinesAnimator.m in Sources */,
 				8A6DBC7617F251FB004311FE /* SmileDetectionViewController.m in Sources */,

@@ -7,6 +7,7 @@
 //
 
 #import "MasterViewController.h"
+#import "BrowseCodeViewController.h"
 
 
 #define kItemKeyTitle       @"title"
@@ -16,6 +17,7 @@
 
 @interface MasterViewController ()
 @property (nonatomic, strong) NSArray *items;
+@property (nonatomic, strong) NSString *currentClassName;
 @end
 
 
@@ -227,6 +229,13 @@
         
         if ([instance isKindOfClass:[UIViewController class]]) {
             
+            self.currentClassName = className;
+            
+            UIBarButtonItem *barBtnItem = [[UIBarButtonItem alloc] initWithTitle:@"ViewCode"
+                                                                           style:UIBarButtonItemStylePlain
+                                                                          target:self
+                                                                          action:@selector(viewCodeButtonTapped:)];
+            [(UIViewController *)instance navigationItem].rightBarButtonItem = barBtnItem;
             [(UIViewController *)instance setTitle:item[kItemKeyTitle]];
             [self.navigationController pushViewController:(UIViewController *)instance
                                                  animated:YES];
@@ -234,6 +243,25 @@
     }
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
+
+// =============================================================================
+#pragma mark - Actions
+
+- (void)viewCodeButtonTapped:(id)sender {
+
+    NSString *urlStr = [NSString stringWithFormat:@"http://github.com/shu223/iOS7-Sampler/blob/master/iOS7Sampler/SampleViewControllers/%@.m",
+                        self.currentClassName];
+    NSLog(@"url:%@", urlStr);
+    
+    BrowseCodeViewController *codeCtr = [[BrowseCodeViewController alloc] init];
+
+    [codeCtr setTitle:self.currentClassName];
+    [codeCtr setUrlString:urlStr];
+
+    [self.navigationController pushViewController:codeCtr
+                                         animated:YES];
 }
 
 @end
