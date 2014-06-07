@@ -175,7 +175,9 @@ Pagination sample for web pages. It uses new property "paginationMode" of UIWebV
 
 ##Special Thanks
 
-Icons and LaunchImages for iOS7-Sampler are designed by [kateru](https://crowdworks.jp/public/employees/24534)
+Icons and LaunchImages are **designed by [Okazu](https://www.facebook.com/pashimo)**
+
+![](https://raw.githubusercontent.com/shu223/iOS7-Sampler/master/iOS7Sampler/Images.xcassets/AppIcon.appiconset/AppIcon40x40@2x.png)
 
 
 ##See Also
