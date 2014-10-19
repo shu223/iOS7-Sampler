@@ -1,3 +1,5 @@
+![](ResourcesForREADME/ogp.jpg)
+
 iOS7-Sampler
 ============
 
