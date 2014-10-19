@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4510" systemVersion="12F37" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6249" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6243"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MapSnapshotViewController">
@@ -16,13 +17,16 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="hmx-hx-NyE">
+                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="hmx-hx-NyE">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="283"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 </mapView>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tPu-WF-e80">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tPu-WF-e80">
                     <rect key="frame" x="0.0" y="291" width="320" height="40"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="koQ-wE-SOX"/>
+                        <constraint firstAttribute="width" constant="320" id="pjn-mP-MdM"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="15"/>
                     <state key="normal" title="Create a snapshot">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
@@ -30,14 +34,31 @@
                         <action selector="createSnapshot" destination="-1" eventType="touchUpInside" id="mV0-g8-4kc"/>
                     </connections>
                 </button>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9e3-N3-cSW">
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9e3-N3-cSW">
                     <rect key="frame" x="40" y="420" width="240" height="128"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="240" id="fwV-xh-kCA"/>
+                        <constraint firstAttribute="height" constant="128" id="tSK-iu-wcW"/>
+                    </constraints>
                 </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
-            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <constraints>
+                <constraint firstItem="hmx-hx-NyE" firstAttribute="top" secondItem="1" secondAttribute="top" id="0dl-OJ-Bsr"/>
+                <constraint firstItem="hmx-hx-NyE" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="2Sx-On-OLK"/>
+                <constraint firstAttribute="centerY" secondItem="tPu-WF-e80" secondAttribute="centerY" constant="-27" id="DAo-it-1gK"/>
+                <constraint firstAttribute="trailing" secondItem="tPu-WF-e80" secondAttribute="trailing" id="DRc-fh-fMy"/>
+                <constraint firstAttribute="trailing" secondItem="hmx-hx-NyE" secondAttribute="trailing" id="OH8-Io-cv3"/>
+                <constraint firstItem="tPu-WF-e80" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="TQG-e5-aqn"/>
+                <constraint firstAttribute="centerX" secondItem="9e3-N3-cSW" secondAttribute="centerX" id="Znb-hR-0q8"/>
+                <constraint firstItem="tPu-WF-e80" firstAttribute="top" secondItem="hmx-hx-NyE" secondAttribute="bottom" constant="8" id="gec-8a-Y9M"/>
+                <constraint firstAttribute="bottom" secondItem="9e3-N3-cSW" secondAttribute="bottom" constant="20" id="k20-B2-dYc"/>
+            </constraints>
         </view>
     </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
 </document>

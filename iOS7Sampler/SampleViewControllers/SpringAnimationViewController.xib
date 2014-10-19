@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4514" systemVersion="13B3116" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6249" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6243"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SpringAnimationViewController">
@@ -21,11 +22,14 @@
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Sk-52-OPD">
                     <rect key="frame" x="0.0" y="359" width="320" height="209"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L59-j4-wRO">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L59-j4-wRO">
                             <rect key="frame" x="101" y="142" width="118" height="47"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="118" id="6G4-Z2-bge"/>
+                                <constraint firstAttribute="height" constant="47" id="POS-ti-FCG"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="15"/>
                             <state key="normal" title="START">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
@@ -33,58 +37,88 @@
                                 <action selector="startButtonTapped:" destination="-1" eventType="touchUpInside" id="3RM-v8-FI1"/>
                             </connections>
                         </button>
-                        <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.01" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="FMT-Z8-Y5P">
+                        <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.01" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="FMT-Z8-Y5P">
                             <rect key="frame" x="99" y="34" width="203" height="34"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="199" id="7hi-AA-jtR"/>
+                                <constraint firstAttribute="height" constant="33" id="cjw-Zs-cvX"/>
+                            </constraints>
                             <connections>
                                 <action selector="sliderChanged:" destination="-1" eventType="valueChanged" id="ugx-sb-ycK"/>
                             </connections>
                         </slider>
-                        <slider opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="2" translatesAutoresizingMaskIntoConstraints="NO" id="UsD-O2-4Cb">
+                        <slider opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="2" translatesAutoresizingMaskIntoConstraints="NO" id="UsD-O2-4Cb">
                             <rect key="frame" x="99" y="88" width="203" height="34"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="33" id="aef-Zn-amU"/>
+                                <constraint firstAttribute="width" constant="199" id="qoS-0I-6kp"/>
+                            </constraints>
                             <connections>
                                 <action selector="sliderChanged:" destination="-1" eventType="valueChanged" id="IR5-9p-v9v"/>
                             </connections>
                         </slider>
-                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="dampingRatio" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vmJ-W5-CpV">
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="dampingRatio" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="vmJ-W5-CpV">
                             <rect key="frame" x="20" y="40" width="73" height="21"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="12"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="Ruc-lh-lNe"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="12"/>
                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0.01" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UJh-Ih-3GO">
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.01" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UJh-Ih-3GO">
                             <rect key="frame" x="227" y="20" width="73" height="21"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="12"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="8Y9-G5-aTB"/>
+                                <constraint firstAttribute="width" constant="73" id="Jce-3v-2aH"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="12"/>
                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0.01" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0EY-PH-Dd4">
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.01" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0EY-PH-Dd4">
                             <rect key="frame" x="227" y="75" width="73" height="21"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="12"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="73" id="A58-NF-Osl"/>
+                                <constraint firstAttribute="height" constant="21" id="IVr-un-Tsg"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="12"/>
                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="velocity" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ViY-eu-LUx">
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="velocity" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="ViY-eu-LUx">
                             <rect key="frame" x="20" y="94" width="73" height="21"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="12"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="a4E-ou-mPq"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="12"/>
                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="320" id="1I5-qM-WCq"/>
+                        <constraint firstItem="FMT-Z8-Y5P" firstAttribute="top" secondItem="7Sk-52-OPD" secondAttribute="top" constant="34" id="8nb-G9-MZU"/>
+                        <constraint firstItem="UsD-O2-4Cb" firstAttribute="leading" secondItem="ViY-eu-LUx" secondAttribute="trailing" constant="8" id="93B-cQ-Vjn"/>
+                        <constraint firstItem="ViY-eu-LUx" firstAttribute="top" secondItem="vmJ-W5-CpV" secondAttribute="bottom" constant="33" id="CTE-BP-NaG"/>
+                        <constraint firstAttribute="bottom" secondItem="0EY-PH-Dd4" secondAttribute="bottom" constant="113" id="Fbf-7L-wY1"/>
+                        <constraint firstAttribute="trailing" secondItem="UJh-Ih-3GO" secondAttribute="trailing" constant="20" id="G4V-cn-bvf"/>
+                        <constraint firstAttribute="trailing" secondItem="0EY-PH-Dd4" secondAttribute="trailing" constant="20" id="HNY-tu-s2i"/>
+                        <constraint firstItem="UsD-O2-4Cb" firstAttribute="top" secondItem="FMT-Z8-Y5P" secondAttribute="bottom" constant="21" id="HeN-41-ixI"/>
+                        <constraint firstItem="0EY-PH-Dd4" firstAttribute="top" secondItem="UJh-Ih-3GO" secondAttribute="bottom" constant="34" id="ROZ-rt-25p"/>
+                        <constraint firstAttribute="trailing" secondItem="FMT-Z8-Y5P" secondAttribute="trailing" constant="20" id="SA7-mo-vVN"/>
+                        <constraint firstAttribute="trailing" secondItem="UsD-O2-4Cb" secondAttribute="trailing" constant="20" id="VWA-ow-awW"/>
+                        <constraint firstItem="vmJ-W5-CpV" firstAttribute="leading" secondItem="7Sk-52-OPD" secondAttribute="leading" constant="20" id="Xxa-1g-gi4"/>
+                        <constraint firstItem="FMT-Z8-Y5P" firstAttribute="leading" secondItem="vmJ-W5-CpV" secondAttribute="trailing" constant="8" id="cm0-Uh-qvu"/>
                         <constraint firstAttribute="height" constant="209" id="h5k-xV-UDQ"/>
+                        <constraint firstItem="ViY-eu-LUx" firstAttribute="leading" secondItem="7Sk-52-OPD" secondAttribute="leading" constant="20" id="i24-dF-vdH"/>
+                        <constraint firstAttribute="centerX" secondItem="L59-j4-wRO" secondAttribute="centerX" id="loQ-8G-KRw"/>
+                        <constraint firstAttribute="bottom" secondItem="L59-j4-wRO" secondAttribute="bottom" constant="20" id="loU-5h-DEE"/>
+                        <constraint firstItem="vmJ-W5-CpV" firstAttribute="top" secondItem="7Sk-52-OPD" secondAttribute="top" constant="40" id="qNx-Be-8Y6"/>
                     </constraints>
                 </view>
                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="m31.png" translatesAutoresizingMaskIntoConstraints="NO" id="xjl-fH-ZOP">
                     <rect key="frame" x="9" y="267" width="62" height="92"/>
-                    <autoresizingMask key="autoresizingMask"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="62" id="LIh-7k-9Ds"/>
                         <constraint firstAttribute="height" constant="92" id="QgF-Ex-efj"/>
@@ -94,15 +128,20 @@
             <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
             <constraints>
                 <constraint firstItem="7Sk-52-OPD" firstAttribute="top" secondItem="xjl-fH-ZOP" secondAttribute="bottom" id="J1u-xb-jmc"/>
+                <constraint firstAttribute="trailing" secondItem="7Sk-52-OPD" secondAttribute="trailing" id="X4o-JF-cOA"/>
                 <constraint firstItem="xjl-fH-ZOP" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="9" id="dEJ-ld-b2I"/>
                 <constraint firstAttribute="bottom" secondItem="7Sk-52-OPD" secondAttribute="bottom" id="g2E-4f-BcN"/>
                 <constraint firstAttribute="centerX" secondItem="7Sk-52-OPD" secondAttribute="centerX" id="rm1-0w-04Q"/>
+                <constraint firstItem="7Sk-52-OPD" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="yu1-3G-rrH"/>
             </constraints>
-            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
-            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
         </view>
     </objects>
     <resources>
         <image name="m31.png" width="62" height="92"/>
     </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
 </document>

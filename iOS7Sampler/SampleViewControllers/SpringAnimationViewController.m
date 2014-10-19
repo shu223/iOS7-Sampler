@@ -28,6 +28,10 @@
 {
     [super viewDidLoad];
     
+}
+
+- (void)viewDidLayoutSubviews {
+
     orgPos = self.imageView.center;
     targetPos = CGPointMake(orgPos.x + 240, orgPos.y);
     

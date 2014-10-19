@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4514" systemVersion="13B3116" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6249" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6243"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WebPaginationViewController">
@@ -15,14 +16,16 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fdN-86-LZO">
+                <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fdN-86-LZO">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="500"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                 </webView>
-                <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="XP9-nj-Yhf">
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="XP9-nj-Yhf">
                     <rect key="frame" x="10" y="520" width="300" height="29"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="300" id="7KN-pU-tD5"/>
+                        <constraint firstAttribute="height" constant="28" id="AoL-CZ-4KL"/>
+                    </constraints>
                     <segments>
                         <segment title="None"/>
                         <segment title="T to B"/>
@@ -36,8 +39,19 @@
                 </segmentedControl>
             </subviews>
             <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
-            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="XP9-nj-Yhf" secondAttribute="bottom" constant="20" id="2OG-0e-c2E"/>
+                <constraint firstItem="XP9-nj-Yhf" firstAttribute="top" secondItem="fdN-86-LZO" secondAttribute="bottom" constant="20" id="MRk-Ux-nS4"/>
+                <constraint firstAttribute="centerX" secondItem="XP9-nj-Yhf" secondAttribute="centerX" id="RGk-pc-H3l"/>
+                <constraint firstItem="fdN-86-LZO" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="mhY-gN-umI"/>
+                <constraint firstItem="fdN-86-LZO" firstAttribute="top" secondItem="1" secondAttribute="top" id="qb9-0K-epf"/>
+                <constraint firstAttribute="trailing" secondItem="fdN-86-LZO" secondAttribute="trailing" id="z0O-uu-ebj"/>
+            </constraints>
         </view>
     </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
 </document>

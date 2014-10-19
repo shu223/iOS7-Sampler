@@ -119,7 +119,7 @@
 
                    // Motion Activity Tracking
                    @{kItemKeyTitle: @"Motion Activity Tracking",
-                     kItemKeyDescription: @"Counting steps and monitoring the activity using CMStepCounter and CMMotionActivityManager. It works only on iPhone5s (M7 chip).",
+                     kItemKeyDescription: @"Counting steps and monitoring the activity using CMStepCounter and CMMotionActivityManager. It works only on devices with M7 or M8 chips.",
                      kItemKeyClassPrefix: @"ActivityTracking",
                      },
 
@@ -187,20 +187,7 @@
     static NSString *CellIdentifier = @"Cell";
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    
-    if (cell == nil) {
         
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle
-                                      reuseIdentifier:CellIdentifier];
-        
-        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-        cell.textLabel.textColor = [UIColor colorWithRed:51./255.
-                                                   green:153./255.
-                                                    blue:204./255.
-                                                   alpha:1.0];
-        cell.detailTextLabel.numberOfLines = 0;
-    }
-    
 	NSDictionary *info = [self.items objectAtIndex:indexPath.row];
     cell.textLabel.text = info[kItemKeyTitle];
     cell.detailTextLabel.text = info[kItemKeyDescription];

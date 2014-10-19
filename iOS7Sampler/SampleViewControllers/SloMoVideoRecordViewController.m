@@ -38,8 +38,6 @@
 {
     [super viewDidLoad];
     
-    self.captureManager = [[AVCaptureManager alloc] initWithPreviewView:self.view];
-    self.captureManager.delegate = self;
     
     UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self
                                                                                  action:@selector(handleDoubleTap:)];
@@ -64,6 +62,19 @@
     self.outerImage1 = [UIImage imageNamed:@"outer1"];
     self.outerImage2 = [UIImage imageNamed:@"outer2"];
     self.outerImageView.image = self.outerImage1;
+}
+
+- (void)viewDidLayoutSubviews {
+
+    if (!self.captureManager) {
+        self.captureManager = [[AVCaptureManager alloc] initWithPreviewView:self.view];
+        self.captureManager.delegate = self;
+    }
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    
+    [super viewDidAppear:animated];
 }
 
 - (void)didReceiveMemoryWarning

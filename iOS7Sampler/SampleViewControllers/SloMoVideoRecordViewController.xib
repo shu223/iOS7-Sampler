@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4514" systemVersion="13B3116" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6249" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6243"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SloMoVideoRecordViewController">
@@ -20,11 +21,13 @@
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HKe-1X-SQA">
                     <rect key="frame" x="0.0" y="449" width="320" height="119"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
-                        <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="e5M-cP-ZrJ">
+                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="e5M-cP-ZrJ">
                             <rect key="frame" x="60" y="12" width="200" height="29"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="28" id="1UK-EB-P30"/>
+                                <constraint firstAttribute="width" constant="200" id="pyh-Zm-7HT"/>
+                            </constraints>
                             <segments>
                                 <segment title="Default"/>
                                 <segment title="60fps"/>
@@ -35,9 +38,12 @@
                                 <action selector="fpsChanged:" destination="-1" eventType="valueChanged" id="Nfi-MP-DIB"/>
                             </connections>
                         </segmentedControl>
-                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6RV-PQ-27Z">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6RV-PQ-27Z">
                             <rect key="frame" x="120" y="52" width="80" height="60"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="80" id="QD8-zB-1FU"/>
+                                <constraint firstAttribute="height" constant="60" id="ee1-Hl-bwR"/>
+                            </constraints>
                             <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="18"/>
                             <state key="normal" image="ShutterButtonStart">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -46,24 +52,32 @@
                                 <action selector="recButtonTapped:" destination="-1" eventType="touchUpInside" id="fGG-8J-CRL"/>
                             </connections>
                         </button>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="outer1" translatesAutoresizingMaskIntoConstraints="NO" id="I8K-vC-Y0u">
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="outer1" translatesAutoresizingMaskIntoConstraints="NO" id="I8K-vC-Y0u">
                             <rect key="frame" x="127" y="49" width="66" height="66"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="66" id="GK3-zf-U07"/>
+                                <constraint firstAttribute="height" constant="66" id="eOb-DK-1ct"/>
+                            </constraints>
                         </imageView>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.29999999999999999" colorSpace="calibratedWhite"/>
                     <constraints>
+                        <constraint firstAttribute="bottom" secondItem="I8K-vC-Y0u" secondAttribute="bottom" constant="4" id="AoJ-a8-VMg"/>
                         <constraint firstAttribute="height" constant="119" id="Dmo-do-RBh"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="119" id="Mf8-aP-fK6"/>
+                        <constraint firstAttribute="centerX" secondItem="6RV-PQ-27Z" secondAttribute="centerX" id="Qbk-sU-Q5v"/>
+                        <constraint firstAttribute="bottom" secondItem="6RV-PQ-27Z" secondAttribute="bottom" constant="7" id="btm-GQ-LgX"/>
+                        <constraint firstAttribute="centerX" secondItem="e5M-cP-ZrJ" secondAttribute="centerX" id="d16-JU-c6l"/>
+                        <constraint firstAttribute="centerX" secondItem="I8K-vC-Y0u" secondAttribute="centerX" id="w4c-yk-8Z8"/>
+                        <constraint firstItem="I8K-vC-Y0u" firstAttribute="top" secondItem="e5M-cP-ZrJ" secondAttribute="bottom" constant="9" id="xwg-PE-ppV"/>
                         <constraint firstAttribute="width" constant="320" id="yig-ac-z5L"/>
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KL6-Zz-Uii">
                     <rect key="frame" x="0.0" y="64" width="320" height="40"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
-                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00:00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Njp-M0-fUv">
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Njp-M0-fUv">
                             <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="20"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <nil key="highlightedColor"/>
@@ -71,25 +85,37 @@
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.29999999999999999" colorSpace="calibratedWhite"/>
                     <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Njp-M0-fUv" secondAttribute="trailing" id="5py-Rb-8Z9"/>
+                        <constraint firstItem="Njp-M0-fUv" firstAttribute="leading" secondItem="KL6-Zz-Uii" secondAttribute="leading" id="FEV-E7-qGH"/>
                         <constraint firstAttribute="height" constant="40" id="IaU-3p-OS5"/>
+                        <constraint firstAttribute="bottom" secondItem="Njp-M0-fUv" secondAttribute="bottom" id="OZh-HK-wPW"/>
+                        <constraint firstItem="Njp-M0-fUv" firstAttribute="top" secondItem="KL6-Zz-Uii" secondAttribute="top" id="q1H-qg-sH3"/>
                         <constraint firstAttribute="width" constant="320" id="rI3-zP-B2Z"/>
                     </constraints>
                 </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstAttribute="trailing" secondItem="KL6-Zz-Uii" secondAttribute="trailing" id="HxA-aF-el4"/>
                 <constraint firstAttribute="centerX" secondItem="KL6-Zz-Uii" secondAttribute="centerX" id="LGO-Zw-gHP"/>
+                <constraint firstItem="KL6-Zz-Uii" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="LYF-CM-Yzq"/>
                 <constraint firstAttribute="centerX" secondItem="HKe-1X-SQA" secondAttribute="centerX" id="ZPl-oq-oFg"/>
                 <constraint firstAttribute="bottom" secondItem="HKe-1X-SQA" secondAttribute="bottom" id="cCT-WV-ha4"/>
+                <constraint firstAttribute="bottom" secondItem="HKe-1X-SQA" secondAttribute="bottom" id="fDW-7w-fUQ"/>
                 <constraint firstItem="KL6-Zz-Uii" firstAttribute="top" secondItem="1" secondAttribute="top" constant="64" id="khP-zV-l8g"/>
+                <constraint firstItem="HKe-1X-SQA" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="tKj-zL-Bw5"/>
+                <constraint firstAttribute="trailing" secondItem="HKe-1X-SQA" secondAttribute="trailing" id="ueu-mP-Cf3"/>
             </constraints>
-            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
             <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
-            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
         </view>
     </objects>
     <resources>
         <image name="ShutterButtonStart" width="50" height="50"/>
         <image name="outer1" width="66" height="66"/>
     </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
 </document>

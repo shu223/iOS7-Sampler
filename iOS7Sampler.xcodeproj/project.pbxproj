@@ -377,6 +377,7 @@
 				8A7BF3B117ED8B43004EF216 /* vendor */,
 				8A7BF29617ED5392004EF216 /* Resources */,
 				8A7BF1C617ED384C004EF216 /* iOS7Sampler */,
+				8A7BF1C717ED384C004EF216 /* Supporting Files */,
 				8A7BF1E817ED384C004EF216 /* iOS7SamplerTests */,
 				8A7BF1BF17ED384C004EF216 /* Frameworks */,
 				8A7BF1BE17ED384B004EF216 /* Products */,
@@ -420,7 +421,6 @@
 				8A7BF1D617ED384C004EF216 /* MasterViewController.m */,
 				8A7BF1D217ED384C004EF216 /* Main.storyboard */,
 				8A7BF1DB17ED384C004EF216 /* Images.xcassets */,
-				8A7BF1C717ED384C004EF216 /* Supporting Files */,
 				8A9C32E418A919B50060F45C /* BrowseCodeViewController.h */,
 				8A9C32E518A919B50060F45C /* BrowseCodeViewController.m */,
 				8A9C32E618A919B50060F45C /* BrowseCodeViewController.xib */,
@@ -437,6 +437,7 @@
 				8A7BF1CE17ED384C004EF216 /* iOS7Sampler-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			path = iOS7Sampler;
 			sourceTree = "<group>";
 		};
 		8A7BF1E817ED384C004EF216 /* iOS7SamplerTests */ = {
@@ -695,7 +696,7 @@
 		8A7BF1B517ED384B004EF216 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "Shuichi Tsutsumi";
 				TargetAttributes = {
 					8A7BF1E017ED384C004EF216 = {
@@ -913,7 +914,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -952,7 +952,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -1010,7 +1009,6 @@
 		8A7BF1F617ED384C004EF216 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iOS7Sampler.app/iOS7Sampler";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -1033,7 +1031,6 @@
 		8A7BF1F717ED384C004EF216 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iOS7Sampler.app/iOS7Sampler";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",

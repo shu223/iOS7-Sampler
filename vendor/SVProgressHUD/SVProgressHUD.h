@@ -29,19 +29,16 @@ typedef NSUInteger SVProgressHUDMaskType;
 
 @interface SVProgressHUD : UIView
 
-#if __IPHONE_OS_VERSION_MIN_REQUIRED >= 50000
-@property (readwrite, nonatomic, retain) UIColor *hudBackgroundColor NS_AVAILABLE_IOS(5_0) UI_APPEARANCE_SELECTOR;
-@property (readwrite, nonatomic, retain) UIColor *hudForegroundColor NS_AVAILABLE_IOS(5_0) UI_APPEARANCE_SELECTOR;
-@property (readwrite, nonatomic, retain) UIColor *hudStatusShadowColor NS_AVAILABLE_IOS(5_0) UI_APPEARANCE_SELECTOR;
-@property (readwrite, nonatomic, retain) UIColor *hudRingBackgroundColor NS_AVAILABLE_IOS(5_0) UI_APPEARANCE_SELECTOR;
-@property (readwrite, nonatomic, retain) UIColor *hudRingForegroundColor NS_AVAILABLE_IOS(5_0) UI_APPEARANCE_SELECTOR;
-@property (readwrite, nonatomic, retain) UIFont *hudFont NS_AVAILABLE_IOS(5_0) UI_APPEARANCE_SELECTOR;
-@property (readwrite, nonatomic, retain) UIImage *hudSuccessImage NS_AVAILABLE_IOS(5_0) UI_APPEARANCE_SELECTOR;
-@property (readwrite, nonatomic, retain) UIImage *hudErrorImage NS_AVAILABLE_IOS(5_0) UI_APPEARANCE_SELECTOR;
-#endif
+#pragma mark - Customization
 
-+ (void)setOffsetFromCenter:(UIOffset)offset;
-+ (void)resetOffsetFromCenter;
++ (void)setBackgroundColor:(UIColor*)color; // default is [UIColor whiteColor]
++ (void)setForegroundColor:(UIColor*)color; // default is [UIColor blackColor]
++ (void)setRingThickness:(CGFloat)width; // default is 4 pt
++ (void)setFont:(UIFont*)font; // default is [UIFont preferredFontForTextStyle:UIFontTextStyleSubheadline]
++ (void)setSuccessImage:(UIImage*)image; // default is bundled success image from Glyphish
++ (void)setErrorImage:(UIImage*)image; // default is bundled error image from Glyphish
+
+#pragma mark - Show Methods
 
 + (void)show;
 + (void)showWithMaskType:(SVProgressHUDMaskType)maskType;
@@ -59,9 +56,21 @@ typedef NSUInteger SVProgressHUDMaskType;
 + (void)showErrorWithStatus:(NSString *)string;
 + (void)showImage:(UIImage*)image status:(NSString*)status; // use 28x28 white pngs
 
++ (void)setOffsetFromCenter:(UIOffset)offset;
++ (void)resetOffsetFromCenter;
+
 + (void)popActivity;
 + (void)dismiss;
 
 + (BOOL)isVisible;
+
+@end
+
+
+@interface SVIndefiniteAnimatedView : UIView
+
+@property (nonatomic, assign) CGFloat strokeThickness;
+@property (nonatomic, assign) CGFloat radius;
+@property (nonatomic, strong) UIColor *strokeColor;
 
 @end
