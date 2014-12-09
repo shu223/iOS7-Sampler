@@ -105,6 +105,27 @@
 // =============================================================================
 #pragma mark - CLLocationManagerDelegate
 
+- (void)locationManager:(CLLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status {
+    
+    NSLog(@"status:%d", status);
+    
+    switch (status) {
+        case kCLAuthorizationStatusNotDetermined:
+        {
+            if ([self.locationManager respondsToSelector:@selector(requestAlwaysAuthorization)]) {
+                [self.locationManager requestAlwaysAuthorization];
+            }
+            break;
+        }
+        case kCLAuthorizationStatusAuthorizedWhenInUse:
+        case kCLAuthorizationStatusAuthorizedAlways:
+            break;
+            
+        default:
+            break;
+    }
+}
+
 - (void)locationManager:(CLLocationManager *)manager didStartMonitoringForRegion:(CLRegion *)region {
     
     NSLog(@"Start monitoring for region");
