@@ -111,6 +111,12 @@
                      kItemKeyClassPrefix: @"ActivityTypes",
                      },
                    
+                   // QR Code Reader
+                   @{kItemKeyTitle: @"QR Code Reader",
+                     kItemKeyDescription: @"Recognize QR codes with AVMetadataObjectTypeQRCode which is added into AVMetadataObjectTypes.",
+                     kItemKeyClassPrefix: @"QRCodeReader",
+                     },
+
                    // QR Code Generator
                    @{kItemKeyTitle: @"QR Code Generator",
                      kItemKeyDescription: @"Generating QR Code with CIQRCodeGenerator.",
