@@ -113,7 +113,7 @@
                    
                    // QR Code Reader
                    @{kItemKeyTitle: @"QR Code Reader",
-                     kItemKeyDescription: @"Recognize QR codes with AVMetadataObjectTypeQRCode which is added into AVMetadataObjectTypes.",
+                     kItemKeyDescription: @"Detect QR codes with AVMetadataObjectTypeQRCode which is added into AVMetadataObjectTypes.",
                      kItemKeyClassPrefix: @"QRCodeReader",
                      },
 

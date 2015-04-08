@@ -8,6 +8,21 @@
 
 #import <Foundation/Foundation.h>
 
+
+@class AVMetadataMachineReadableCodeObject;
+
+@protocol TTMQRCodeReaderDelegate <NSObject>
+- (void)didDetectQRCode:(AVMetadataMachineReadableCodeObject *)qrCode;
+@end
+
+
 @interface TTMQRCodeReader : NSObject
+
+@property (nonatomic, weak) id<TTMQRCodeReaderDelegate> delegate;
+
++ (instancetype)sharedReader;
+
+- (void)startReaderOnView:(UIView *)view;
+- (void)stopReader;
 
 @end

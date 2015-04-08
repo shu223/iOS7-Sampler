@@ -7,14 +7,13 @@
 //
 
 #import "QRCodeReaderViewController.h"
-@import AVFoundation;
 #import "SVProgressHUD.h"
+#import "TTMQRCodeReader.h"
+#import <AVFoundation/AVMetadataObject.h>
 
 
 @interface QRCodeReaderViewController ()
-<AVCaptureMetadataOutputObjectsDelegate>
-@property (nonatomic, strong) AVCaptureMetadataOutput *captureMetadataOutput;
-@property (nonatomic, strong) AVCaptureSession *captureSession;
+<TTMQRCodeReaderDelegate>
 @end
 
 
@@ -34,7 +33,8 @@
     
     [super viewWillAppear:animated];
     
-    [self startReader];
+    [[TTMQRCodeReader sharedReader] setDelegate:self];
+    [[TTMQRCodeReader sharedReader] startReaderOnView:self.view];
 }
 
 /*
@@ -49,88 +49,13 @@
 
 
 // =============================================================================
-#pragma mark - AVCaptureMetadataOutputObjectsDelegate
+#pragma mark - TTMQRCodeReaderDelegate
 
-- (void)       captureOutput:(AVCaptureOutput *)captureOutput
-    didOutputMetadataObjects:(NSArray *)metadataObjects
-              fromConnection:(AVCaptureConnection *)connection
-{
-    for (AVMetadataObject *metadataObject in metadataObjects) {
-        
-        if (![metadataObject isKindOfClass:[AVMetadataMachineReadableCodeObject class]]) {
-            continue;
-        }
-        
-        AVMetadataMachineReadableCodeObject *machineReadableCode = (AVMetadataMachineReadableCodeObject *)metadataObject;
-        NSString *msg = [NSString stringWithFormat:@"Detected a QR code! type:%@, value:%@",
-                         machineReadableCode.type, machineReadableCode.stringValue];
-        [SVProgressHUD showSuccessWithStatus:msg];
-    }
+- (void)didDetectQRCode:(AVMetadataMachineReadableCodeObject *)qrCode {
     
-    [self stopReader];
-}
-
-
-// =============================================================================
-#pragma mark - Private
-
-- (void)startReader {
-
-    // Find rear camera
-    NSError *error;
-    AVCaptureDevice *captureDevice;
-    for (AVCaptureDevice *aCaptureDevice in [AVCaptureDevice devices]) {
-        if (aCaptureDevice.position == AVCaptureDevicePositionBack) {
-            captureDevice = aCaptureDevice;
-        }
-    }
-    if (!captureDevice) {
-        NSLog(@"Couldn't find rear camera.");
-        return;
-    }
-
-    // Create AVCaptureDeviceInput object
-    AVCaptureDeviceInput *captureDeviceInput = [AVCaptureDeviceInput deviceInputWithDevice:captureDevice error:&error];
-    if (error) {
-        NSLog(@"error:%@", error);
-        return;
-    }
-    
-    // Create capture session and add an input to the session
-    self.captureSession = [[AVCaptureSession alloc] init];
-    self.captureSession.sessionPreset = AVCaptureSessionPresetHigh;
-    
-    if ([self.captureSession canAddInput:captureDeviceInput]) {
-        [self.captureSession addInput:captureDeviceInput];
-    }
-    
-    // Create capture metadata output and add to the session
-    self.captureMetadataOutput = [[AVCaptureMetadataOutput alloc] init];
-    [self.captureMetadataOutput setMetadataObjectsDelegate:self queue:dispatch_get_main_queue()];
-
-    if ([self.captureSession canAddOutput:self.captureMetadataOutput]) {
-        [self.captureSession addOutput:self.captureMetadataOutput];
-    }
-    
-    // Set target metadata object types
-    self.captureMetadataOutput.metadataObjectTypes = @[AVMetadataObjectTypeQRCode];
-
-    // Setup preview layer
-    AVCaptureVideoPreviewLayer *captureVideoPreviewLayer = [AVCaptureVideoPreviewLayer layerWithSession:self.captureSession];
-    captureVideoPreviewLayer.videoGravity = AVLayerVideoGravityResizeAspectFill;// AVLayerVideoGravityResizeAspect is default.
-    captureVideoPreviewLayer.bounds = CGRectMake(0, 0, 200, 200);
-    captureVideoPreviewLayer.position = CGPointMake(CGRectGetMidX(self.view.bounds), CGRectGetMidY(self.view.bounds));
-    captureVideoPreviewLayer.borderWidth = 1.0f;
-    captureVideoPreviewLayer.borderColor = [UIColor redColor].CGColor;
-    
-    [self.view.layer addSublayer:captureVideoPreviewLayer];
-    
-    [self.captureSession startRunning];
-}
-
-- (void)stopReader {
-
-    [self.captureSession stopRunning];
+    NSString *msg = [NSString stringWithFormat:@"Detected a QR code! type:%@, value:%@",
+                     qrCode.type, qrCode.stringValue];
+    [SVProgressHUD showSuccessWithStatus:msg];
 }
 
 @end

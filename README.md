@@ -128,6 +128,11 @@ New Activity Types: AirDrop, Post to Flickr / Vimeo, Add to ReadingList
 ![](http://f.cl.ly/items/2V2E3P2f1X1z0E0E0E47/AirDrop_.png)
 
 
+###QR Code Reader
+
+Detect QR codes with AVMetadataObjectTypeQRCode which is added into AVMetadataObjectTypes.
+
+
 ###QR Code Generator
 
 Generating QR Code with CIQRCodeGenerator.
