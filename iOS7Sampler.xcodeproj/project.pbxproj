@@ -14,7 +14,7 @@
 		8A043B1B17F0D3D600DA84E9 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A043B1A17F0D3D600DA84E9 /* MapKit.framework */; };
 		8A17A1CC1AD4F97B00CA0E8F /* QRCodeReaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A17A1CA1AD4F97B00CA0E8F /* QRCodeReaderViewController.m */; };
 		8A17A1CD1AD4F97B00CA0E8F /* QRCodeReaderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A17A1CB1AD4F97B00CA0E8F /* QRCodeReaderViewController.xib */; };
-		8A17A1D01AD5034D00CA0E8F /* TTMQRCodeReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A17A1CF1AD5034D00CA0E8F /* TTMQRCodeReader.m */; };
+		8A17A1D51AD513A000CA0E8F /* TTMQRCodeReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A17A1D41AD513A000CA0E8F /* TTMQRCodeReader.m */; };
 		8A43D5B117F11BCA005E8BE8 /* MapSnapshotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A43D5AF17F11BCA005E8BE8 /* MapSnapshotViewController.m */; };
 		8A43D5B217F11BCA005E8BE8 /* MapSnapshotViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A43D5B017F11BCA005E8BE8 /* MapSnapshotViewController.xib */; };
 		8A43D5B717F11E72005E8BE8 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8A43D5B417F11E72005E8BE8 /* SVProgressHUD.bundle */; };
@@ -163,8 +163,8 @@
 		8A17A1C91AD4F97B00CA0E8F /* QRCodeReaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeReaderViewController.h; sourceTree = "<group>"; };
 		8A17A1CA1AD4F97B00CA0E8F /* QRCodeReaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeReaderViewController.m; sourceTree = "<group>"; };
 		8A17A1CB1AD4F97B00CA0E8F /* QRCodeReaderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QRCodeReaderViewController.xib; sourceTree = "<group>"; };
-		8A17A1CE1AD5034D00CA0E8F /* TTMQRCodeReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTMQRCodeReader.h; sourceTree = "<group>"; };
-		8A17A1CF1AD5034D00CA0E8F /* TTMQRCodeReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTMQRCodeReader.m; sourceTree = "<group>"; };
+		8A17A1D31AD513A000CA0E8F /* TTMQRCodeReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTMQRCodeReader.h; sourceTree = "<group>"; };
+		8A17A1D41AD513A000CA0E8F /* TTMQRCodeReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTMQRCodeReader.m; sourceTree = "<group>"; };
 		8A43D5AE17F11BCA005E8BE8 /* MapSnapshotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapSnapshotViewController.h; sourceTree = "<group>"; };
 		8A43D5AF17F11BCA005E8BE8 /* MapSnapshotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapSnapshotViewController.m; sourceTree = "<group>"; };
 		8A43D5B017F11BCA005E8BE8 /* MapSnapshotViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapSnapshotViewController.xib; sourceTree = "<group>"; };
@@ -358,6 +358,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8A17A1D11AD513A000CA0E8F /* TTM */ = {
+			isa = PBXGroup;
+			children = (
+				8A17A1D21AD513A000CA0E8F /* QRCodeReader */,
+			);
+			path = TTM;
+			sourceTree = "<group>";
+		};
+		8A17A1D21AD513A000CA0E8F /* QRCodeReader */ = {
+			isa = PBXGroup;
+			children = (
+				8A17A1D31AD513A000CA0E8F /* TTMQRCodeReader.h */,
+				8A17A1D41AD513A000CA0E8F /* TTMQRCodeReader.m */,
+			);
+			path = QRCodeReader;
+			sourceTree = "<group>";
+		};
 		8A43D5B317F11E72005E8BE8 /* SVProgressHUD */ = {
 			isa = PBXGroup;
 			children = (
@@ -537,8 +554,6 @@
 				8A17A1C91AD4F97B00CA0E8F /* QRCodeReaderViewController.h */,
 				8A17A1CA1AD4F97B00CA0E8F /* QRCodeReaderViewController.m */,
 				8A17A1CB1AD4F97B00CA0E8F /* QRCodeReaderViewController.xib */,
-				8A17A1CE1AD5034D00CA0E8F /* TTMQRCodeReader.h */,
-				8A17A1CF1AD5034D00CA0E8F /* TTMQRCodeReader.m */,
 			);
 			path = SampleViewControllers;
 			sourceTree = "<group>";
@@ -615,6 +630,7 @@
 		8A7BF3B117ED8B43004EF216 /* vendor */ = {
 			isa = PBXGroup;
 			children = (
+				8A17A1D11AD513A000CA0E8F /* TTM */,
 				8ACDEF3B1878F61D00BC94F6 /* AVCaptureManager */,
 				8AC907521850A66000A74F2E /* PulsingHalo */,
 				8A43D5B917F12307005E8BE8 /* ZBCustomTransitions */,
@@ -861,7 +877,7 @@
 				8A7BF1CD17ED384C004EF216 /* main.m in Sources */,
 				8A7BF29217ED4C9F004EF216 /* DynamicBehaviorsViewController.m in Sources */,
 				8A43D5B817F11E72005E8BE8 /* SVProgressHUD.m in Sources */,
-				8A17A1D01AD5034D00CA0E8F /* TTMQRCodeReader.m in Sources */,
+				8A17A1D51AD513A000CA0E8F /* TTMQRCodeReader.m in Sources */,
 				8A6DBC6C17F193FB004311FE /* MapOverlaysViewController.m in Sources */,
 				8AC907501850931C00A74F2E /* BeaconViewController.m in Sources */,
 				8A43D5D417F12307005E8BE8 /* ZBFallenBricksAnimator.m in Sources */,
