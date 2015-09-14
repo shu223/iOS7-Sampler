@@ -725,7 +725,7 @@
 		8A7BF1B517ED384B004EF216 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Shuichi Tsutsumi";
 				TargetAttributes = {
 					8A7BF1E017ED384C004EF216 = {
@@ -960,6 +960,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -1020,6 +1021,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iOS7Sampler/iOS7Sampler-Prefix.pch";
 				INFOPLIST_FILE = "iOS7Sampler/iOS7Sampler-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shu223.ios7sampler;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -1033,6 +1035,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iOS7Sampler/iOS7Sampler-Prefix.pch";
 				INFOPLIST_FILE = "iOS7Sampler/iOS7Sampler-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shu223.ios7sampler;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -1054,6 +1057,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "iOS7SamplerTests/iOS7SamplerTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "Shuichi-Tsutsumi.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -1072,6 +1076,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iOS7Sampler/iOS7Sampler-Prefix.pch";
 				INFOPLIST_FILE = "iOS7SamplerTests/iOS7SamplerTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "Shuichi-Tsutsumi.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;

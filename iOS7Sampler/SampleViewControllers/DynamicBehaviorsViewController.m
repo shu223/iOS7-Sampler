@@ -39,12 +39,12 @@
     // Set up
     self.animator = [[UIDynamicAnimator alloc] initWithReferenceView:self.view];
     
-    self.gravityBeahvior = [[UIGravityBehavior alloc] initWithItems:nil];
+    self.gravityBeahvior = [[UIGravityBehavior alloc] init];
     
-    self.collisionBehavior = [[UICollisionBehavior alloc] initWithItems:nil];
+    self.collisionBehavior = [[UICollisionBehavior alloc] init];
     self.collisionBehavior.translatesReferenceBoundsIntoBoundary = YES;
     
-    self.itemBehavior = [[UIDynamicItemBehavior alloc] initWithItems:nil];
+    self.itemBehavior = [[UIDynamicItemBehavior alloc] init];
     self.itemBehavior.elasticity = 0.6;
     self.itemBehavior.friction = 0.5;
     self.itemBehavior.resistance = 0.5;
