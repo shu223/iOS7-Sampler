@@ -24,6 +24,7 @@
 		8A43D5DC17F187BE005E8BE8 /* SpriteKitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A43D5DA17F187BE005E8BE8 /* SpriteKitViewController.m */; };
 		8A43D5DD17F187BE005E8BE8 /* SpriteKitViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A43D5DB17F187BE005E8BE8 /* SpriteKitViewController.xib */; };
 		8A43D5E017F187D9005E8BE8 /* SampleScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A43D5DF17F187D9005E8BE8 /* SampleScene.m */; };
+		8A4448481CA0B36800DEDAFA /* TTMCaptureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A4448471CA0B36800DEDAFA /* TTMCaptureManager.m */; };
 		8A6DBC6817F18814004311FE /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A6DBC6717F18814004311FE /* SpriteKit.framework */; };
 		8A6DBC6C17F193FB004311FE /* MapOverlaysViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A6DBC6A17F193FB004311FE /* MapOverlaysViewController.m */; };
 		8A6DBC6D17F193FB004311FE /* MapOverlaysViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A6DBC6B17F193FB004311FE /* MapOverlaysViewController.xib */; };
@@ -128,7 +129,6 @@
 		8AC907551850A66000A74F2E /* PulsingHaloLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AC907541850A66000A74F2E /* PulsingHaloLayer.m */; };
 		8AC907571850AB8000A74F2E /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AC907561850AB8000A74F2E /* CoreBluetooth.framework */; };
 		8AC907591850B2F600A74F2E /* IPhone_5s@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AC907581850B2F600A74F2E /* IPhone_5s@2x.png */; };
-		8ACDEF3E1878F61D00BC94F6 /* AVCaptureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ACDEF3D1878F61D00BC94F6 /* AVCaptureManager.m */; };
 		8ACDEF421878F68D00BC94F6 /* SloMoVideoRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ACDEF401878F68D00BC94F6 /* SloMoVideoRecordViewController.m */; };
 		8ACDEF431878F68D00BC94F6 /* SloMoVideoRecordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8ACDEF411878F68D00BC94F6 /* SloMoVideoRecordViewController.xib */; };
 		8AEF0F9417FBCCF600D2B9BE /* ReadingListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AEF0F9217FBCCF600D2B9BE /* ReadingListViewController.m */; };
@@ -180,6 +180,8 @@
 		8A43D5DB17F187BE005E8BE8 /* SpriteKitViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SpriteKitViewController.xib; sourceTree = "<group>"; };
 		8A43D5DE17F187D9005E8BE8 /* SampleScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleScene.h; sourceTree = "<group>"; };
 		8A43D5DF17F187D9005E8BE8 /* SampleScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleScene.m; sourceTree = "<group>"; };
+		8A4448461CA0B36800DEDAFA /* TTMCaptureManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTMCaptureManager.h; sourceTree = "<group>"; };
+		8A4448471CA0B36800DEDAFA /* TTMCaptureManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTMCaptureManager.m; sourceTree = "<group>"; };
 		8A6DBC6717F18814004311FE /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
 		8A6DBC6917F193FB004311FE /* MapOverlaysViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapOverlaysViewController.h; sourceTree = "<group>"; };
 		8A6DBC6A17F193FB004311FE /* MapOverlaysViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapOverlaysViewController.m; sourceTree = "<group>"; };
@@ -308,8 +310,6 @@
 		8AC907541850A66000A74F2E /* PulsingHaloLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PulsingHaloLayer.m; sourceTree = "<group>"; };
 		8AC907561850AB8000A74F2E /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		8AC907581850B2F600A74F2E /* IPhone_5s@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "IPhone_5s@2x.png"; sourceTree = "<group>"; };
-		8ACDEF3C1878F61D00BC94F6 /* AVCaptureManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVCaptureManager.h; sourceTree = "<group>"; };
-		8ACDEF3D1878F61D00BC94F6 /* AVCaptureManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVCaptureManager.m; sourceTree = "<group>"; };
 		8ACDEF3F1878F68D00BC94F6 /* SloMoVideoRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SloMoVideoRecordViewController.h; sourceTree = "<group>"; };
 		8ACDEF401878F68D00BC94F6 /* SloMoVideoRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SloMoVideoRecordViewController.m; sourceTree = "<group>"; };
 		8ACDEF411878F68D00BC94F6 /* SloMoVideoRecordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SloMoVideoRecordViewController.xib; sourceTree = "<group>"; };
@@ -361,6 +361,7 @@
 		8A17A1D11AD513A000CA0E8F /* TTM */ = {
 			isa = PBXGroup;
 			children = (
+				8A4448451CA0B36800DEDAFA /* CaptureManager */,
 				8A17A1D21AD513A000CA0E8F /* QRCodeReader */,
 			);
 			path = TTM;
@@ -394,6 +395,15 @@
 				8A43D5C917F12307005E8BE8 /* ZBFallenBricksAnimator.m */,
 			);
 			path = ZBCustomTransitions;
+			sourceTree = "<group>";
+		};
+		8A4448451CA0B36800DEDAFA /* CaptureManager */ = {
+			isa = PBXGroup;
+			children = (
+				8A4448461CA0B36800DEDAFA /* TTMCaptureManager.h */,
+				8A4448471CA0B36800DEDAFA /* TTMCaptureManager.m */,
+			);
+			path = CaptureManager;
 			sourceTree = "<group>";
 		};
 		8A7BF1B417ED384B004EF216 = {
@@ -631,7 +641,6 @@
 			isa = PBXGroup;
 			children = (
 				8A17A1D11AD513A000CA0E8F /* TTM */,
-				8ACDEF3B1878F61D00BC94F6 /* AVCaptureManager */,
 				8AC907521850A66000A74F2E /* PulsingHalo */,
 				8A43D5B917F12307005E8BE8 /* ZBCustomTransitions */,
 				8A43D5B317F11E72005E8BE8 /* SVProgressHUD */,
@@ -662,15 +671,6 @@
 				8AC907541850A66000A74F2E /* PulsingHaloLayer.m */,
 			);
 			path = PulsingHalo;
-			sourceTree = "<group>";
-		};
-		8ACDEF3B1878F61D00BC94F6 /* AVCaptureManager */ = {
-			isa = PBXGroup;
-			children = (
-				8ACDEF3C1878F61D00BC94F6 /* AVCaptureManager.h */,
-				8ACDEF3D1878F61D00BC94F6 /* AVCaptureManager.m */,
-			);
-			path = AVCaptureManager;
 			sourceTree = "<group>";
 		};
 		8AEFF739181007D5004182BD /* plists */ = {
@@ -858,6 +858,7 @@
 			files = (
 				8A9C30FC18A8BCAE0060F45C /* SpringAnimationViewController.m in Sources */,
 				8AEF0F9B17FC19C200D2B9BE /* ActivityTrackingViewController.m in Sources */,
+				8A4448481CA0B36800DEDAFA /* TTMCaptureManager.m in Sources */,
 				8AC907551850A66000A74F2E /* PulsingHaloLayer.m in Sources */,
 				8A43D5E017F187D9005E8BE8 /* SampleScene.m in Sources */,
 				8A7BF1D117ED384C004EF216 /* AppDelegate.m in Sources */,
@@ -869,7 +870,6 @@
 				8A7BF3BB17ED8B43004EF216 /* HUTransitionAnimator.m in Sources */,
 				8A6DBC7117F19718004311FE /* MapDirectionsViewController.m in Sources */,
 				8A6DBC8417F2CDC0004311FE /* ImageFiltersViewController.m in Sources */,
-				8ACDEF3E1878F61D00BC94F6 /* AVCaptureManager.m in Sources */,
 				8ACDEF421878F68D00BC94F6 /* SloMoVideoRecordViewController.m in Sources */,
 				8A7BF38817ED6882004EF216 /* ActivityTypesViewController.m in Sources */,
 				8A7BF3AF17ED8A9E004EF216 /* CustomTransitionViewController.m in Sources */,

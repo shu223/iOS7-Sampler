@@ -8,17 +8,17 @@
 
 #import "SloMoVideoRecordViewController.h"
 #import "SVProgressHUD.h"
-#import "AVCaptureManager.h"
+#import "TTMCaptureManager.h"
 #import <AssetsLibrary/AssetsLibrary.h>
 
 
 @interface SloMoVideoRecordViewController ()
-<AVCaptureManagerDelegate>
+<TTMCaptureManagerDelegate>
 {
     NSTimeInterval startTime;
     BOOL isNeededToSave;
 }
-@property (nonatomic, strong) AVCaptureManager *captureManager;
+@property (nonatomic, strong) TTMCaptureManager *captureManager;
 @property (nonatomic, assign) NSTimer *timer;
 @property (nonatomic, strong) UIImage *recStartImage;
 @property (nonatomic, strong) UIImage *recStopImage;
@@ -67,7 +67,9 @@
 - (void)viewDidLayoutSubviews {
 
     if (!self.captureManager) {
-        self.captureManager = [[AVCaptureManager alloc] initWithPreviewView:self.view];
+        self.captureManager = [[TTMCaptureManager alloc] initWithPreviewView:self.view
+                                                         preferredCameraType:CameraTypeBack
+                                                                  outputMode:OutputModeVideoData];
         self.captureManager.delegate = self;
     }
 }
@@ -225,7 +227,7 @@
             desiredFps = 60.0;
             break;
         case 2:
-            desiredFps = 120.0;
+            desiredFps = 240.0;
             break;
     }
     
@@ -245,7 +247,7 @@
         
         dispatch_async(dispatch_get_main_queue(), ^{
             
-            if (desiredFps > 30.0) {
+            if (desiredFps >= 120.0) {
                 self.outerImageView.image = self.outerImage2;
             }
             else {

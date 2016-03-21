@@ -63,9 +63,9 @@
                      kItemKeyClassPrefix: @"Beacon",
                      },
 
-                   // 120fps Video Recording
-                   @{kItemKeyTitle: @"120 fps SLO-MO video recording",
-                     kItemKeyDescription: @"SLO-MO video recorder using AVFoundation. It works with 120fps on iPhone5s.",
+                   // 240fps Video Recording
+                   @{kItemKeyTitle: @"240 fps SLO-MO video recording",
+                     kItemKeyDescription: @"SLO-MO video recorder using AVFoundation. It works with 240fps on iPhone6, iPhone6s, etc.",
                      kItemKeyClassPrefix: @"SloMoVideoRecord",
                      },
                    

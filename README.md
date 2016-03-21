@@ -51,9 +51,9 @@ Region monitoring demo using iBeacon.
 Related Repository: [PulsingHalo](https://github.com/shu223/PulsingHalo)
 
 
-###120fps Video Recording
+###240fps Video Recording
 
-SLO-MO video recorder using AVFoundation. It works with 120fps on iPhone5s.
+SLO-MO video recorder using AVFoundation. It works with 240fps on iPhone 6, iPhone 6s, etc.
 
 ![](http://f.cl.ly/items/360a271y1G3Q2C2a3p2d/IMG_8907_r1_c1.jpg)
 
