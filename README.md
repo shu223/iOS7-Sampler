@@ -3,6 +3,10 @@
 iOS7-Sampler
 ============
 
+[![License](http://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat
+)](http://mit-license.org)
+[![Twitter](https://img.shields.io/badge/twitter-@shu223-blue.svg?style=flat)](http://twitter.com/shu223)
+
 Code examples for the new functions of iOS 7.
 
 ![](http://f.cl.ly/items/1t250s1N3z0c1g2H1N0P/iOS7Sampler1_r1_c1.png)
@@ -184,11 +188,24 @@ Pagination sample for web pages. It uses new property "paginationMode" of UIWebV
 
 Icons and LaunchImages are **designed by [Okazu](https://www.facebook.com/pashimo)**
 
-![](https://raw.githubusercontent.com/shu223/iOS7-Sampler/master/iOS7Sampler/Images.xcassets/AppIcon.appiconset/AppIcon40x40@2x.png)
+![](https://github.com/shu223/iOS7-Sampler/blob/master/iOS7Sampler/Images.xcassets/AppIcon.appiconset/Icon-40@2x.png?raw=true)
 
 
-##See Also
+##Author
 
-###[Open source collection for Flat Design UI](http://d.hatena.ne.jp/shu223/20130617/1371606128)
+**Shuichi Tsutsumi**
 
-A collection of OSS which helps you **implement Flat Design UI on your current version of iOS (iOS5,6) just like that on iOS 7.**
+I'm an iOS freelancer in Japan, welcome works from abroad.
+
+You can check my past works here: 
+
+- [My Profile Summary — Medium](https://medium.com/@shu223/my-profile-summary-f14bfc1e7099#.vdh0i7clr)
+
+Other contacts:
+
+- [Twitter](https://twitter.com/shu223)
+- [Facebook](https://www.facebook.com/shuichi.tsutsumi)
+- [LinkedIn](https://www.linkedin.com/profile/view?id=214896557)
+- [Blog (Japanese)](http://d.hatena.ne.jp/shu223/)
+
+
