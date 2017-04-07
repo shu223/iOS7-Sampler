@@ -24,6 +24,8 @@
 	<string>1.0</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSCameraUsageDescription</key>
+	<string>This is NSCameraUsageDescription</string>
 	<key>NSLocationAlwaysUsageDescription</key>
 	<string>Your current location can be enabled.</string>
 	<key>UIMainStoryboardFile</key>
