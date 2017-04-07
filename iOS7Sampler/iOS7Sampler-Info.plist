@@ -28,6 +28,8 @@
 	<string>This is NSCameraUsageDescription</string>
 	<key>NSLocationAlwaysUsageDescription</key>
 	<string>Your current location can be enabled.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>This is NSMicrophoneUsageDescription</string>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
 	<key>UIRequiredDeviceCapabilities</key>
